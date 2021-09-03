@@ -1,4 +1,3 @@
-import React from "react";
 import myPhoto from "./myPhoto.svg";
 
 export const links = [

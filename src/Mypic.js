@@ -11,7 +11,11 @@ const Mypic = () => {
       <div className="section-center">
         {myPics.map((pic) => {
           const { id, image } = pic;
-          return <img src={image} alt="myPic" className="myPic" />;
+          return (
+            <div key={id}>
+              <img src={image} alt="myPic" className="myPic" />;
+            </div>
+          );
         })}
         <button className="prev">
           <FiChevronLeft />
