@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import Mypic from "./Mypic";
 import About from "./About";
 import Latesthikes from "./Latesthikes";
+import Footer from "./Footer";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
@@ -13,7 +14,8 @@ ReactDOM.render(
     <Navbar />
     <Mypic />
     <About />
-    <Latesthikes/>
+    <Latesthikes />
+    <Footer />
     <App />
   </React.StrictMode>,
   document.getElementById("root")
