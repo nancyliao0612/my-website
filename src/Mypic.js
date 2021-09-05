@@ -10,6 +10,7 @@ function Mypic() {
     const lastIndex = myPics.length - 1;
     if (index < 0) {
       setIndex(lastIndex);
+      setMyPics();
     }
     if (index > lastIndex) {
       setIndex(0);
