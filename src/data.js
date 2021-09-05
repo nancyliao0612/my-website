@@ -1,5 +1,3 @@
-import myPhoto from "./myPhoto.svg";
-
 export const links = [
   {
     id: 1,
@@ -25,12 +23,5 @@ export const links = [
     id: 5,
     url: "/adventure",
     text: "Adventure",
-  },
-];
-
-export const myPics = [
-  {
-    id: 1,
-    image: myPhoto,
   },
 ];
