@@ -43,7 +43,7 @@ function Mypic() {
           }
 
           return (
-            <article className="slide" className={position} key={id}>
+            <article className={position} key={id}>
               <img src={image} alt="myPic" className="myPic" />
             </article>
           );
