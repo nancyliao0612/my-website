@@ -90,11 +90,11 @@ nav {
   margin-left: -0.5rem;
 }
 .links a {
-  color: var(--clr-black-1);
+  color: var(--clr-primary-1);
   font-size: 1rem;
   display: block;
+  font-weight: 400;
   padding: 0.5rem 1.5rem;
-  font-weight: 500;
   letter-spacing: var(--spacing);
   transition: var(--transition);
   /* border: solid 1px; */
@@ -114,7 +114,7 @@ nav {
 }
 
 .show-container {
-  height: 11rem;
+  height: 12rem;
 }
 
 /*
@@ -133,7 +133,7 @@ Home - myPic
   background-color: var(--clr-primary-3);
   width: 100vw;
   margin: 0 auto;
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   height: 20rem;
   /* border: solid 1px; */
 }
@@ -170,8 +170,6 @@ article img {
   height: 375px;
   width: 375px;
   object-fit: cover;
-  padding-right: 30px;
-  /* padding-bottom: 30px; */
 }
 
 .prev,
@@ -193,7 +191,7 @@ article img {
 }
 .prev:hover,
 .next:hover {
-  background: var(--clr-primary-2);
+  background: var(--clr-primary-3);
 }
 
 .prev {
