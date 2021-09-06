@@ -5,11 +5,11 @@ const myPics = [
   },
   {
     id: 2,
-    image: "https://i.imgur.com/no3cbAD.png",
+    image: "https://i.imgur.com/Tw8hhDN.png",
   },
   {
     id: 3,
-    image: "https://i.imgur.com/59vbZAp.png",
+    image: "https://i.imgur.com/UmNBJ44.png",
   },
 ];
 

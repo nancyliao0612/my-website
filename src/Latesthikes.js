@@ -16,7 +16,7 @@ const Latesthikes = () => {
           <div className="mountain-container">
             <div className="name-style-1">
               <h2 className="mountain-style">大霸尖山</h2>
-              <h6>Date: 2021/4/20~2021/4/22</h6>
+              <h6>2021/4/20~2021/4/22</h6>
             </div>
             <div className="name-style-2">
               <div className="text-center color-under">
@@ -47,14 +47,14 @@ const Latesthikes = () => {
           <div className="mountain-container">
             <div className="name-style-1">
               <h2 className="mountain-style">閂山鈴鳴</h2>
-              <h6>Date: 2020/11/20~2020/11/21</h6>
+              <h6>2020/11/20~2020/11/21</h6>
             </div>
             <div className="name-style-2">
               <div className="text-center color-under-3">
                 <h5>鈴鳴山</h5>
                 <p>(3272m)</p>
               </div>
-              <div className="text-center color-under-3">
+              <div className="text-center color-under-3 color-under-4">
                 <h5>閂山</h5>
                 <p>(3168m)</p>
               </div>
@@ -70,7 +70,7 @@ const Latesthikes = () => {
           <div className="mountain-container">
             <div className="name-style-1">
               <h2 className="mountain-style">南湖大山</h2>
-              <h6>Date: 2020/7/30~2020/8/02</h6>
+              <h6>2020/7/30~2020/8/02</h6>
             </div>
             <div className="name-style-2">
               <div className="text-center color-under">
