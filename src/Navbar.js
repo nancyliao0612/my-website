@@ -9,7 +9,9 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={webLogo} className="logo" alt="logo" />
+          <a href="/">
+            <img src={webLogo} className="logo" alt="logo" />
+          </a>
           <button
             className="nav-toggle"
             onClick={() => setShowLinks(!showLinks)}

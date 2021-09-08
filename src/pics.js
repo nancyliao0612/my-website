@@ -1,3 +1,5 @@
+//動態輪播牆
+
 const myPics = [
   {
     id: 1,

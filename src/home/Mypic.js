@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import pics from "./pics";
+import pics from "../pics";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 function Mypic() {

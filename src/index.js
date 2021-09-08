@@ -2,21 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import Navbar from "./Navbar";
-import Mypic from "./Mypic";
-import About from "./About";
-import Latesthikes from "./Latesthikes";
-import Footer from "./Footer";
 import App from "./App";
+import Home from "./Home";
 import reportWebVitals from "./reportWebVitals";
+import Hiking from "./Hiking";
+import HikingDB from "./HikingDB";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { FaHiking } from "react-icons/fa";
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
-    <Mypic />
-    <About />
-    <Latesthikes />
-    <Footer />
-    <App />
+    <Router>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/hiking">
+        <Hiking />
+      </Route>
+      <Route path="/HikingDB">
+        <HikingDB />
+      </Route>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
