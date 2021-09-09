@@ -479,9 +479,9 @@ HikingDB
 
 .DB-center {
   padding: 1rem;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--clr-black-1);
-  line-height: 1.4rem;
+  line-height: 1.5rem;
 }
 
 .DB-center p,
