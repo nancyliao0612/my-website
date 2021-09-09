@@ -16,7 +16,7 @@ Variables
   --clr-primary-1: #656d4a;
   --clr-primary-2: rgba(184, 189, 154, 0.3);
   --clr-primary-3: rgba(212, 214, 199, 0.9);
-  --clr-black-1: rgba(0, 0, 0, 0.8);
+  --clr-black-1: #404040;
   --clr-grey-1: rgb(225, 228, 211);
   --clr-grey-2: #a6a6a6;
   --clr-yellow-1: #ffbd59;
@@ -471,6 +471,10 @@ HikingDB
 ===============
 */
 
+.DB-background {
+  background-color: var(--clr-primary-2);
+}
+
 .map-pic {
   width: 100%;
   max-height: 600px;
@@ -495,9 +499,23 @@ span {
   /* border: solid 1px; */
 }
 
-h3 {
+.DB-background h3 {
+  padding: 0.2rem;
   font-size: large;
+  color: var(--clr-primary-1);
+  /* border: solid 1px; */
+  background: var(--clr-primary-2);
+  margin: 0.8rem 0;
 }
+/* }
+.DB-background h3::after {
+  content: "";
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  z-index: -2;
+} */
+
 .summary-container {
   display: flex;
 }
@@ -523,10 +541,6 @@ h3 {
   color: var(--clr-primary-1);
 }
 
-.text-small {
-  font-size: 0.7rem;
-  color: var(--clr-grey-2);
-}
 div span {
   display: block;
   margin: 0 1rem;
@@ -535,11 +549,30 @@ div span {
 .text-bullet {
   padding: 0 1.5rem;
 }
+.text-btwImg {
+  margin: 0.7rem 0;
+}
 
 .star {
   color: var(--clr-yellow-1);
   display: inline;
   /* border: solid 1px; */
+}
+.text-small {
+  font-size: 0.8rem;
+  color: var(--clr-grey-2);
+  margin-left: -8px;
+  margin-top: -3px;
+  /* border: solid 1px; */
+}
+
+.DB-link {
+  color: var(--clr-primary-1);
+}
+
+.text-cross {
+  text-decoration: line-through;
+  display: inline;
 }
 
 li {
@@ -555,8 +588,8 @@ li {
 .underline-article {
   height: 0.05rem;
   width: 90vw;
-  background: var(--clr-primary-1);
-  margin: 1.5rem 0;
+  background: var(--clr-primary-3);
+  margin: 1rem 0;
 }
 
 .DB-center img {
@@ -569,7 +602,12 @@ li {
   justify-content: space-between;
 }
 
-.img-double img {
+div .style-1 {
+  width: 49%;
+  height: 150px;
+}
+
+div .style-2 {
   width: 49%;
   height: 300px;
   /* border: solid 1px; */
