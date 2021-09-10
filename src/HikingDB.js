@@ -5,6 +5,7 @@ import {
   FaStarHalfAlt,
   FaMountain,
   FaRoad,
+  FaArrowUp,
 } from "react-icons/fa";
 import { AiFillClockCircle } from "react-icons/ai";
 
@@ -341,6 +342,14 @@ const HikingDB = () => {
         <br />
         <h3>高度圖</h3>
         <img src="https://i.imgur.com/B94A4NY.png" alt="" />
+        <br />
+        <br />
+        <p>Photo Credit: </p>
+        <a href="#home">
+          <button className="back-to-top">
+            <FaArrowUp />
+          </button>
+        </a>
       </div>
     </section>
   );

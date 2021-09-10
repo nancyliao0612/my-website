@@ -7,7 +7,7 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   return (
     <nav>
-      <div className="nav-center">
+      <div className="nav-center" id="home">
         <div className="nav-header">
           <a href="/">
             <img src={webLogo} className="logo" alt="logo" />
