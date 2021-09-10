@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Navbar from "./Navbar";
 import App from "./App";
+import Footer from "./Footer";
 import Home from "./Home";
 import reportWebVitals from "./reportWebVitals";
 import Hiking from "./Hiking";
@@ -24,6 +25,7 @@ ReactDOM.render(
         <HikingDB />
       </Route>
     </Router>
+    <Footer />
   </React.StrictMode>,
   document.getElementById("root")
 );

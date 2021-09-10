@@ -486,6 +486,7 @@ HikingDB
   font-size: 15px;
   color: var(--clr-black-1);
   line-height: 1.5rem;
+  max-width: var(--max-width);
 }
 
 .DB-center p,
@@ -575,7 +576,7 @@ div span {
   display: inline;
 }
 
-li {
+.text-bullet li {
   list-style: initial;
   /* border: solid 1px; */
 }
@@ -652,4 +653,18 @@ End of HikingDB
     height: auto !important; /*navBar高度讓裡面的元素撐開*/
   }
   /*myPic seciton*/
+
+  .DB-center {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .DB-center img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+  div .style-1 {
+    width: 49%;
+    height: 250px;
+  }
 }

@@ -12,7 +12,7 @@ const HikingDB = () => {
   return (
     <section className="DB-background">
       <div>
-        <img src="https://i.imgur.com/3IHD5rl.png" alt="" className="map-pic" />
+        <img src="https://i.imgur.com/495Ri0y.png" alt="" className="map-pic" />
       </div>
       <div className="DB-center">
         <div className="summary-container">
@@ -74,6 +74,7 @@ const HikingDB = () => {
             </div>
           </span>
         </div>
+        <br />
         <h3>入園證/入山證</h3>
         <ul className="text-bullet">
           <li>
@@ -104,6 +105,7 @@ const HikingDB = () => {
             side note: 申請規則時有更動，最新情況還是要依照國家公園公告為主！
           </li>
         </ul>
+        <br />
         <h3>九九山莊</h3>
         <p>
           九九山莊海拔 2,699
@@ -121,8 +123,10 @@ const HikingDB = () => {
           </li>
           <li>網路：全區皆有網路，收訊良好</li>
           <li>費用：$200 / 晚（需事先匯款）</li>
+          <li>水源：有供應</li>
           <li>注意事項：龍門客棧的通鋪會有老鼠出沒，糧食記得要密封好。</li>
         </ul>
+        <br />
         <h3>Day 1</h3>
         <p>
           第一天凌晨 2:30 從台北開車出發，抵達大霸登山服務站的時間是早上 6:30。
@@ -231,7 +235,7 @@ const HikingDB = () => {
         <img src="https://i.imgur.com/nLYcpiq.jpg" alt="" />
         <br />
         <br />
-        大概在 7-8k 之間，往右有一條通往伊澤山的捷徑
+        大概在 7-8 k 之間，往左有一條通往伊澤山的捷徑。
         <br />
         該條路相當陡峭，如果發現不太對勁記得要回頭！
         <br />
@@ -247,15 +251,16 @@ const HikingDB = () => {
         <img src="https://i.imgur.com/8ouaCsc.jpg" alt="" />
         <br />
         <br />
-        早上 8 點左右抵達大霸尖山（ 3492 公尺）！
+        早上 8 點左右抵達大霸尖山（ 3492 公尺）。
         <br />
-        一親聖山芳澤，對其凜然霸氣，不禁肅然起敬。
+        從前一天到今日，走了 30
+        公里終於一親聖山芳澤，對其凜然霸氣，敬畏之心油然而生。
         <br />
         <br />
         早期登山客可以沿著鐵梯登上大霸尖山山頂，但雪霸國家公園管理處在 2010
         年即公告禁止登頂。
         <br />
-        現在山友僅可以在霸基的三角點合影。
+        現在山友僅能在霸基的三角點合影。
         <br />
         <br />
         <img src="https://i.imgur.com/EBm1qeW.jpg" alt="" />
@@ -298,7 +303,8 @@ const HikingDB = () => {
         <br />
         <img src="https://i.imgur.com/iaB0Rre.jpg" alt="" />
         <p className="text-btwImg">
-          接著，就是回程，把剩下兩座百岳撿起來 –– 伊澤山 ＆ 加利山
+          通常一早天氣狀況較穩定，因此建議先去較遠的大小霸，回程時再把另外兩座百岳撿起來
+          –– 伊澤山 ＆ 加利山
         </p>
         <div className="img-double">
           <img
@@ -313,6 +319,14 @@ const HikingDB = () => {
           />
         </div>
         <br />
+        <h3>Day 3</h3>
+        清晨 4:30 從九九山莊出發
+        <br />
+        心情上已經輕鬆許多，就順順地一路往回走～
+        <br />
+        接近中午抵達大霸登山服務處。
+        <br />
+        <br />
         <h3>後記</h3>
         這三天兩夜走來最感謝緣分讓我結識一個登山家庭，他們很可愛、話不多，甚至有點木訥❤️
         <br />
@@ -321,8 +335,12 @@ const HikingDB = () => {
         何其幸運可以與他們相遇，說這次大霸之旅是我此生最美好、最難忘的一次登山經驗也不為過。
         <br />
         非常謝謝這家人、其他山友的照顧，以及支持我跳脫舒適圈並信任我的家人！
-        <br /> <br />
+        <br />
+        <br />
         <img src="https://i.imgur.com/7q6Jk9r.jpg" alt="" />
+        <br />
+        <h3>高度圖</h3>
+        <img src="https://i.imgur.com/B94A4NY.png" alt="" />
       </div>
     </section>
   );
