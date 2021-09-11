@@ -11,8 +11,8 @@ const Latesthikes = () => {
         <h1>Latest Hikes</h1>
         <div className="underline-2"></div>
       </div>
-      <div className="article-section">
-        <Link to="/HikingDB">
+      <Link to="/HikingDB">
+        <div className="article-section">
           <div className="article-container">
             <img src={hiking_pic} alt="pic" className="hiking-pic" />
             <div className="mountain-container">
@@ -40,8 +40,8 @@ const Latesthikes = () => {
               </div>
             </div>
           </div>
-        </Link>
-      </div>
+        </div>
+      </Link>
 
       {/* 第二篇 */}
       <div className="article-section">
