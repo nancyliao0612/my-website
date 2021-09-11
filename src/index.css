@@ -263,17 +263,16 @@ Home - aboutMe
 /* background-attachment: fixed !important; */
 /* } */
 
-.aboutPic {
+/* .aboutPic {
   display: table;
   height: 250px;
   width: 100vw;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.274), rgba(0, 0, 0, 0.3)),
-    url("./picture/aboutMe.JPG") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.3)),
+    url("./picture/aboutMe.JPG") no-repeat center center scroll;
   background-size: cover;
-}
+} */
 
-/* 
 .aboutPic::before {
   content: "";
   position: fixed;
@@ -287,7 +286,7 @@ Home - aboutMe
   top: 100px;
   left: 0;
   z-index: -1;
-} */
+}
 
 .about-me {
   color: white;
@@ -707,5 +706,8 @@ End of HikingDB
   div .style-1 {
     width: 49%;
     height: 250px;
+  }
+  .aboutPic {
+    background-attachment: fixed;
   }
 }

@@ -344,7 +344,7 @@ const HikingDB = () => {
         <img src="https://i.imgur.com/B94A4NY.png" alt="" />
         <br />
         <br />
-        <p>Photo Credit: </p>
+        <p>Photo Credit: 許先生</p>
         <a href="#home">
           <button className="back-to-top">
             <FaArrowUp />
