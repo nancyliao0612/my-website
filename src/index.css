@@ -14,8 +14,8 @@ Variables
 :root {
   /* 網站主色 */
   --clr-primary-1: #656d4a;
-  --clr-primary-2: rgba(184, 189, 154, 0.3);
-  --clr-primary-3: rgba(212, 214, 199, 0.9);
+  --clr-primary-2: #e9ebe1;
+  --clr-primary-3: #d8dacd;
   --clr-black-1: #404040;
   --clr-grey-1: rgb(225, 228, 211);
   --clr-grey-2: #a6a6a6;
@@ -276,16 +276,16 @@ Home - aboutMe
 .aboutPic::before {
   content: "";
   position: fixed;
-  height: 350px;
+  height: 750px;
   width: 100vw;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("./picture/aboutMe.JPG");
   background-size: cover;
   background-position: center;
   object-fit: cover;
-  top: 100px;
+  top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -99;
 }
 
 .about-me {
