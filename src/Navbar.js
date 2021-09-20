@@ -1,41 +1,46 @@
 import React, { useState } from "react";
-import webLogo from "./webLogo.svg";
 import { links } from "./data";
-import { FaBars } from "react-icons/fa";
+import { AiOutlineMenu } from "react-icons/ai";
+import { AppContext, useGlobalContext } from "./Context";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const { openMenu } = useGlobalContext();
   return (
     <nav>
       <div className="nav-center" id="home">
         <div className="nav-header">
           <a href="/">
-            <img src={webLogo} className="logo" alt="logo" />
+            <img
+              src="https://i.imgur.com/vASotwZ.png?1"
+              className="logo"
+              alt="logo"
+            />
           </a>
-          <button
-            className="nav-toggle"
-            onClick={() => setShowLinks(!showLinks)}
-          >
-            <FaBars />
+          <button className="nav-toggle" onClick={openMenu}>
+            <AiOutlineMenu />
           </button>
         </div>
         {/* 原本寫法 {showLinks && (<div>...</div>) } 但這樣子如果沒有先點擊 FaBars 的話，拉長螢幕時就無法顯示選單文字！*/}
-        <div
+        {/* <div
           className={`${
             showLinks ? "links-container show-container" : "links-container"
           }`}
         >
           <ul className="links">
             {links.map((link) => {
-              const { id, url, text } = link;
+              const { id, url, text, icon } = link;
               return (
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  <a href={url}>
+                    {icon}
+                    {text}
+                  </a>
                 </li>
               );
             })}
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

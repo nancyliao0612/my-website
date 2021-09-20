@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { AppProvider } from "./Context";
 import "./index.css";
 import Navbar from "./Navbar";
+import Menu from "./Menu";
 import App from "./App";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -9,23 +11,25 @@ import reportWebVitals from "./reportWebVitals";
 import Hiking from "./Hiking";
 import HikingDB from "./HikingDB";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { FaHiking } from "react-icons/fa";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
-    <Router>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/hiking">
-        <Hiking />
-      </Route>
-      <Route path="/HikingDB">
-        <HikingDB />
-      </Route>
-    </Router>
-    <Footer />
+    <AppProvider>
+      <Navbar />
+      <Menu />
+      <Router>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/hiking">
+          <Hiking />
+        </Route>
+        <Route path="/HikingDB">
+          <HikingDB />
+        </Route>
+      </Router>
+      <Footer />
+    </AppProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

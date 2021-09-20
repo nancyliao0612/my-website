@@ -14,9 +14,10 @@ Variables
 :root {
   /* 網站主色 */
   --clr-primary-1: #656d4a;
-  /* --clr-primary-2: #ecefe8; */
+
   --clr-primary-2: #e9ece3;
-  --clr-primary-3: #d4d9c7;
+  --clr-primary-3: #d4d8c7;
+  /* --clr-primary-3: #dde4d7; */
   --clr-black-1: #404040;
   --clr-grey-1: rgb(225, 228, 211);
   --clr-grey-2: #a6a6a6;
@@ -70,6 +71,10 @@ Navbar
 ===============
 */
 nav {
+  /* border: solid 1px; */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   background: var(--clr-primary-2);
   box-shadow: var(--light-shadow);
 }
@@ -84,49 +89,111 @@ nav {
   color: var(--clr-primary-1);
   background: transparent;
   border-color: transparent;
-  transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
   color: var(--clr-black-1);
-  transform: rotate(90deg);
 }
 .logo {
   height: 45px;
   /* border: solid 1px; */
   margin-left: -0.5rem;
 }
-.links a {
-  color: var(--clr-primary-1);
-  font-size: 1rem;
-  display: block;
-  font-weight: 400;
-  padding: 0.5rem 1.5rem;
-  letter-spacing: var(--spacing);
-  transition: var(--transition);
-  /* border: solid 1px; */
-}
-.links a:hover {
-  background: var(--clr-primary-3);
-  padding-left: 2rem; /*製造文字往內縮的效果*/
-  color: var(--clr-primary-1);
-}
-
-.links-container {
-  height: 0;
-  padding-top: 0;
-  transition: var(--transition);
-  overflow: hidden; /*把選單的文字 home,about...遮起來*/
-  /* border: solid 1px; */
-}
-
-.show-container {
-  height: 12rem;
-}
 
 /*
 =============== 
 End of Navbar
+===============
+*/
+/*
+=============== 
+Menu
+===============
+*/
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.show-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--clr-primary-2);
+  visibility: visible;
+  z-index: 10;
+}
+.close-btn {
+  position: relative;
+  top: 1rem;
+  margin-left: 90vw;
+  border: none;
+  background: transparent;
+  color: var(--clr-primary-1);
+  font-size: 1.5rem;
+  transition: var(--transition);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.links {
+  /* border: solid 1px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  top: 5rem;
+}
+
+.links a {
+  /* border: solid 1px; */
+  display: flex;
+  align-items: center;
+  color: var(--clr-primary-1);
+  font-size: 1.15rem;
+  padding: 0.8rem 1.5rem;
+  letter-spacing: var(--spacing);
+  transition: all 0.2s ease-in-out;
+
+  /* animation: moveup 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; */
+  /*設定物件狀態為動畫結束時的狀態*/
+  /* animation-delay: 0.5s; */
+  /* border: solid 1px; */
+}
+
+.links a svg {
+  margin-right: 0.3rem;
+}
+
+/* @keyframes moveup {
+  from {
+    margin-bottom: 0rem;
+  }
+  to {
+    margin-bottom: 0.8rem;
+  }
+} */
+
+.links a:hover {
+  /* background: var(--clr-primary-3); */
+  padding-left: 2rem; /*製造文字往內縮的效果*/
+  color: var(--clr-primary-1);
+}
+
+/*
+=============== 
+End of Menu
 ===============
 */
 
@@ -141,6 +208,12 @@ Home - myPic
   width: 100vw;
   margin: 0 auto;
   /* max-width: var(--max-width); */
+  position: relative;
+  top: 3rem;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
   height: 20rem;
   /* border: solid 1px; */
 }
@@ -152,9 +225,8 @@ Home - myPic
   max-width: 800px;
   height: 20rem;
   position: relative;
-  display: flex;
+
   overflow: hidden;
-  /* border: solid 1px; */
 }
 
 article {
@@ -254,15 +326,13 @@ Home - aboutMe
 /* .aboutPic {
   height: 350px;
   width: 100vw;
-  overflow: scroll; */
-
-/* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
     url("./picture/aboutMe.JPG");
   background-size: cover;
   background-position: center;
-  object-fit: cover; 保持原有尺寸比例 */
-/* background-attachment: fixed !important; */
-/* } */
+  object-fit: cover; /*保持原有尺寸比例*/
+/* background-attachment: fixed; */
+/* } 
 
 /* .aboutPic {
   display: table;
@@ -663,20 +733,44 @@ End of HikingDB
   .nav-toggle {
     display: none;
   }
-  .links {
+
+  .menu {
+    z-index: 1;
+    visibility: visible;
     display: flex;
+    height: 3rem;
+    /*navBar高度讓裡面的元素撐開*/
   }
+
+  .close-btn {
+    display: none;
+    transition: none;
+  }
+
+  .links {
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: none;
+    margin: 0 auto;
+    z-index: 999;
+  }
+
   .links a {
+    height: 3rem;
+    font-size: 0.9rem;
+    padding: 0.7rem 0.8rem;
+    transition: none;
     /* border: solid 1px; */
-    padding: 0;
-    margin: 0 0.6rem;
   }
+
   .links a:hover {
-    padding: 0;
-    background: transparent;
-  }
-  .links-container {
-    height: auto !important; /*navBar高度讓裡面的元素撐開*/
+    color: var(--clr-black-1);
+    padding: 0.7rem 0.8rem;
   }
   .article-section {
     width: 50%;
