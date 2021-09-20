@@ -3,11 +3,11 @@
 const myPics = [
   {
     id: 1,
-    image: "https://i.imgur.com/kbna6ib.png",
+    image: "https://i.imgur.com/u6ylr4j.png",
   },
   {
     id: 2,
-    image: "https://i.imgur.com/Tw8hhDN.png",
+    image: "https://i.imgur.com/RZWHs6V.png",
   },
   {
     id: 3,
