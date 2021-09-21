@@ -11,7 +11,7 @@ const myPics = [
   },
   {
     id: 3,
-    image: "https://i.imgur.com/UmNBJ44.png",
+    image: "https://i.imgur.com/epnctQ4.png",
   },
 ];
 

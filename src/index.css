@@ -210,12 +210,11 @@ Home - myPic
   /* max-width: var(--max-width); */
   position: relative;
   top: 3rem;
-
   display: flex;
   align-content: center;
   justify-content: center;
   height: 20rem;
-  /* border: solid 1px; */
+  border: solid 1px;
 }
 
 .section-center {
@@ -225,7 +224,6 @@ Home - myPic
   max-width: 800px;
   height: 20rem;
   position: relative;
-
   overflow: hidden;
 }
 
@@ -246,8 +244,8 @@ article img {
 .myPic {
   margin: 0 auto;
   /* border: solid 1px; */
-  height: 375px;
-  width: 375px;
+  height: 370px;
+  width: 370px;
   object-fit: cover;
 }
 
@@ -306,12 +304,19 @@ Home - aboutMe
 .about-container {
   width: 100vw;
   /* height: 15rem; */
-  /* border: solid 1px; */
+  /* border: solid 1px red; */
   overflow: hidden;
   display: flex;
+  align-content: center;
   justify-content: center;
+  flex-direction: column;
 }
 
+.greeting {
+  width: 12rem;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+}
 /* .about-center {
   margin: 0 auto;
   display: flex;
@@ -349,7 +354,7 @@ Home - aboutMe
   position: fixed;
   height: 750px;
   width: 100vw;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.472), rgba(0, 0, 0, 0.534)),
     url("./picture/aboutMe.JPG");
   background-size: cover;
   background-position: center;
@@ -359,9 +364,6 @@ Home - aboutMe
   z-index: -99;
 }
 
-.about-me {
-  color: white;
-}
 .underline {
   width: 4rem;
   height: 0.12rem;
@@ -369,32 +371,43 @@ Home - aboutMe
   margin: 0.5rem;
 }
 
+.aboutPic {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  /* border: solid 1px red; */
+}
 .content-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  /* border: solid 1px white; */
+  /* border: solid 1px red; */
+  text-align: start;
+  position: relative;
+  top: 1.5rem;
   padding: 30px;
-  height: 400px;
+  height: 420px;
   letter-spacing: 0.02rem;
 }
 
 .blog-intro {
-  color: var(--clr-primary-3);
+  color: white;
   font-size: 0.88rem;
   line-height: 1.35rem;
-  text-align: center;
-  margin: 2rem auto;
-  font-weight: var(--font-weight);
+  text-align: start;
+  font-weight: 800px;
+  /* border: solid 1px; */
 }
 
 .quote {
-  color: var(--clr-grey-1);
-  font-size: 0.75rem;
-  font-style: italic;
+  color: white;
+  font-size: 0.85rem;
+  /* font-style: italic; */
 }
 
+.content-container div {
+  margin-top: 1rem;
+  /* border: solid 1px; */
+}
 /*
 =============== 
 End of Home - aboutMe
@@ -406,25 +419,32 @@ End of Home - aboutMe
 Home - Latest Hikes
 ===============
 */
+
 .hike-section {
   background: var(--clr-primary-2);
   width: 100vw;
   height: 1200px;
 }
 
+.latest-hikes {
+  width: 12rem;
+  object-fit: cover;
+  /* border: solid 1px; */
+  margin-top: 1rem;
+}
+
 .title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  color: var(--clr-black-1);
+  padding: 0.5rem 0;
 }
-.underline-2 {
+/* .underline-2 {
   width: 4rem;
   height: 0.12rem;
   background: var(--clr-primary-1);
   margin: 0.5rem;
-}
+} */
 
 .article-section {
   display: flex;
@@ -494,7 +514,7 @@ Home - Latest Hikes
   width: 3.8rem;
   height: 0.8rem;
   position: absolute;
-  background: var(--clr-primary-3);
+  background: var(--clr-primary-2);
   /* border: solid 1px; */
   margin-left: -30px;
   margin-top: -30px;
@@ -506,7 +526,7 @@ Home - Latest Hikes
   width: 3.3rem;
   height: 0.8rem;
   position: absolute;
-  background: var(--clr-primary-3);
+  background: var(--clr-primary-2);
   /* border: solid 1px; */
   margin-left: -27px;
   margin-top: -30px;
@@ -518,7 +538,7 @@ Home - Latest Hikes
   width: 3.1rem;
   height: 0.8rem;
   position: absolute;
-  background: var(--clr-primary-3);
+  background: var(--clr-primary-2);
   /* border: solid 1px; */
   margin-left: -24px;
   margin-top: -30px;
@@ -528,6 +548,7 @@ Home - Latest Hikes
 .color-under-4::after {
   width: 2.5rem;
   margin-left: -20px;
+  background: var(--clr-primary-2);
 }
 
 /*

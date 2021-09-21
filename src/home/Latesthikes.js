@@ -8,8 +8,13 @@ const Latesthikes = () => {
   return (
     <section className="hike-section">
       <div className="title-container">
-        <h1>Latest Hikes</h1>
-        <div className="underline-2"></div>
+        <img
+          src="https://i.imgur.com/vfmEwFf.png"
+          alt="Latest Hikes"
+          className="latest-hikes"
+        />
+        {/* <h1>Latest Hikes</h1>
+        <div className="underline-2"></div> */}
       </div>
       <Link to="/HikingDB">
         <div className="article-section">
