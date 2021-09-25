@@ -18,16 +18,14 @@ const About = () => {
           </p>
           <div>
             <p className="quote">
-              Welcome to my blog! I code the website from scratch to practice my
-              programming skills.
+              Welcome to my blog! I code the website from scratch to practice
+              programming skills and share my enthusiasm of life. Topics include
+              student exchange experiences in Istanbul, hiking, and coding. Stay
+              tuned!
             </p>
-            <p className="quote">
-              If you see any function not working, don't doubt it. That's just a
-              bug that I'm racking my brain to fix.
-            </p>
-            <p className="quote">
-              Topics are relevant to student exchange experience in Istanbul,
-              hiking, adventure and coding. Stay tuned!
+            <p className="quote quote-small">
+              (If you see any function not working, don't doubt it. That's just
+              a bug that I'm racking my brain to fix lol)
             </p>
           </div>
           {/* <p className="quote">
