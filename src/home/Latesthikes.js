@@ -11,7 +11,7 @@ const Latesthikes = () => {
         <img
           src="https://i.imgur.com/vfmEwFf.png"
           alt="Latest Hikes"
-          className="latest-hikes"
+          className="title-label"
         />
         {/* <h1>Latest Hikes</h1>
         <div className="underline-2"></div> */}

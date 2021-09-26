@@ -44,7 +44,12 @@ function Mypic() {
 
           return (
             <article className={position} key={id}>
-              <img src={image} alt="myPic" className="myPic" />
+              <img
+                src={image}
+                alt="myPic"
+                className="myPic"
+                srcSet={`${image} 300w, ${image} 768w, ${image} 1280w`}
+              />
             </article>
           );
         })}

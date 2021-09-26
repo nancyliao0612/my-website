@@ -268,7 +268,7 @@ article img {
 }
 .prev:hover,
 .next:hover {
-  background: var(--clr-primary-3);
+  background: var(--clr-primary-2);
 }
 
 .prev {
@@ -364,12 +364,12 @@ Home - aboutMe
   z-index: -99;
 }
 
-.underline {
+/* .underline {
   width: 4rem;
   height: 0.12rem;
   background: var(--clr-primary-3);
   margin: 0.5rem;
-}
+} */
 
 .aboutPic {
   max-width: var(--max-width);
@@ -380,6 +380,7 @@ Home - aboutMe
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   /* border: solid 1px red; */
   text-align: start;
   position: relative;
@@ -391,16 +392,18 @@ Home - aboutMe
 
 .blog-intro {
   color: white;
-  font-size: 0.9rem;
-  line-height: 1.35rem;
-  text-align: start;
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+  text-align: center;
   font-weight: 800px;
   /* border: solid 1px; */
 }
 
 .quote {
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  text-align: center;
+
   /* font-style: italic; */
 }
 .quote-small {
@@ -432,7 +435,7 @@ Home - Latest Hikes
   height: 1200px;
 }
 
-.latest-hikes {
+.title-label {
   width: 12rem;
   object-fit: cover;
   /* border: solid 1px; */
@@ -739,6 +742,31 @@ div .style-2 {
 /*
 =============== 
 End of HikingDB
+===============
+*/
+/*
+=============== 
+Istanbul
+===============
+*/
+
+.istanbul-section {
+  width: 100vw;
+  height: 250px;
+  background-color: white;
+  /* border: solid 1px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upcoming {
+  color: var(--clr-grey-2);
+}
+
+/*
+=============== 
+End of Istanbul
 ===============
 */
 

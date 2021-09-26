@@ -13,7 +13,11 @@ const HikingDB = () => {
   return (
     <section className="DB-background">
       <div>
-        <img src="https://i.imgur.com/495Ri0y.png" alt="" className="map-pic" />
+        <img
+          src="https://i.imgur.com/495Ri0y.png?1"
+          alt=""
+          className="map-pic"
+        />
       </div>
       <div className="DB-center">
         <div className="summary-container">
@@ -350,7 +354,7 @@ const HikingDB = () => {
         獻給想要來攀登大霸、需要多一些勇氣的你。
         <br />
         <br />
-        <p>Photo Credit: 待補</p>
+        <p>Photo Credit: Hank</p>
         <a href="#home">
           <button className="back-to-top">
             <FaArrowUp />

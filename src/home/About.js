@@ -1,5 +1,4 @@
 import React from "react";
-// import aboutMe from "./picture/aboutMe.JPG";
 
 const About = () => {
   return (
@@ -28,10 +27,6 @@ const About = () => {
               a bug that I'm racking my brain to fix lol)
             </p>
           </div>
-          {/* <p className="quote">
-            "It’s always about excellence and perfection."
-          </p>
-          <p className="quote">– Alex Honnold, 'Free Solo'.</p> */}
         </div>
       </div>
     </div>
