@@ -609,7 +609,7 @@ HikingDB
 
 .DB-center {
   padding: 1rem;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--clr-black-1);
   line-height: 1.5rem;
   max-width: var(--max-width);
@@ -617,22 +617,21 @@ HikingDB
 
 .DB-center p,
 span {
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 .DB-center h5 {
   color: var(--clr-primary-1);
   font-weight: var(--font-weight);
-  font-size: 14px;
+  font-size: 16px;
   /* border: solid 1px; */
 }
 
 .DB-background h3 {
-  padding: 0.2rem;
-  font-size: large;
+  padding: 0.1rem 0;
+  font-size: 20px;
   color: var(--clr-primary-1);
   /* border: solid 1px; */
-  background: var(--clr-primary-3);
-  margin: 0.8rem 0;
+  margin: 1rem 0;
 }
 
 .summary-container {
