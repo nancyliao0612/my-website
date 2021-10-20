@@ -10,6 +10,7 @@ import Home from "./Home";
 import reportWebVitals from "./reportWebVitals";
 import Hiking from "./Hiking";
 import HikingDB from "./HikingDB";
+import IstanbulFirst from "./IstanbulFirst";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 ReactDOM.render(
@@ -26,6 +27,9 @@ ReactDOM.render(
         </Route>
         <Route path="/HikingDB">
           <HikingDB />
+        </Route>
+        <Route path="/IstanbulFirst">
+          <IstanbulFirst />
         </Route>
       </Router>
       <Footer />
