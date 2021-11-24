@@ -19,7 +19,7 @@ function Mypic() {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 8000);
+    }, 10000);
     return () => {
       clearInterval(slider);
     };
