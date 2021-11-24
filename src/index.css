@@ -243,9 +243,9 @@ article img {
 
 .myPic {
   margin: 0 auto;
-  /* border: solid 1px; */
+  border: solid 1px;
   height: 370px;
-  width: 370px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -528,6 +528,12 @@ Home - Latest Hikes
   margin-left: -30px;
   margin-top: -30px;
   z-index: -2;
+}
+
+.text-adj h5 {
+  width: 3.7rem;
+  /* border: solid 1px; */
+  margin-right: -7.5px;
 }
 
 .color-under-2::after {

@@ -81,19 +81,19 @@ const Latesthikes = () => {
               <h6>2020/7/30~2020/8/02</h6>
             </div>
             <div className="name-style-2">
-              <div className="text-center color-under">
+              <div className="text-center color-under text-adj">
                 <h5>南湖北山</h5>
                 <p>(3536m)</p>
               </div>
-              <div className="text-center color-under">
+              <div className="text-center color-under text-adj">
                 <h5>南湖主峰</h5>
                 <p>(3740m)</p>
               </div>
-              <div className="text-center color-under">
+              <div className="text-center color-under text-adj">
                 <h5>南湖東峰</h5>
                 <p>(3632m)</p>
               </div>
-              <div className="text-center color-under">
+              <div className="text-center color-under text-adj">
                 <h5>審馬陣山</h5>
                 <p>(3141m)</p>
               </div>
