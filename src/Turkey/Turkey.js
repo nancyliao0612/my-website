@@ -5,8 +5,7 @@ import Pamukkale from "./Pamukkale";
 const Turkey = () => {
   return (
     <>
-      <h1>hi</h1>
-      <img src="" alt="" />
+      <div className="emptySpace"></div>
       <section className="istanbul-section">
         <img
           src="https://i.imgur.com/KOoHhDS.png"
@@ -16,6 +15,8 @@ const Turkey = () => {
         <Pamukkale />
         <hr className="article-hr" />
         <Istanbul />
+        <br />
+        <br />
       </section>
     </>
   );

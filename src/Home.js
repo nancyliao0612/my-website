@@ -4,6 +4,7 @@ import About from "./home/About";
 import Latesthikes from "./home/Latesthikes";
 import Istanbul from "./home/Istanbul";
 import { Link } from "react-router-dom";
+import Pamukkale from "./Turkey/Pamukkale";
 // import Footer from "./Footer";
 
 const Home = () => {
@@ -19,7 +20,10 @@ const Home = () => {
             className="title-label"
           />
         </Link>
+        <Pamukkale />
         <Istanbul />
+        <br />
+        <br />
       </section>
       <Latesthikes />
       {/* <Footer /> */}

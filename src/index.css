@@ -463,7 +463,6 @@ Home - Latest Hikes
   /* border: solid 1px; */
   width: 100vw;
   height: auto;
-  margin-bottom: 2rem;
 }
 
 .article-container {
@@ -898,6 +897,23 @@ Pamukkale EPS 01
 /*
 =============== 
 End of Pamukkale EPS 01
+===============
+*/
+
+/*
+=============== 
+Turkey
+===============
+*/
+
+.emptySpace {
+  width: 100vw;
+  height: 80px;
+}
+
+/*
+=============== 
+End of Turkey
 ===============
 */
 
