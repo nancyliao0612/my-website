@@ -14,6 +14,7 @@ const Turkey = () => {
           className="title-label"
         />
         <Pamukkale />
+        <hr className="article-hr" />
         <Istanbul />
       </section>
     </>

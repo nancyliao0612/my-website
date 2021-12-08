@@ -462,6 +462,8 @@ Home - Latest Hikes
   padding: 1.2rem 0;
   /* border: solid 1px; */
   width: 100vw;
+  height: auto;
+  margin-bottom: 2rem;
 }
 
 .article-container {
@@ -773,7 +775,7 @@ Istanbul
 
 .istanbul-section {
   width: 100vw;
-  height: 550px;
+  height: auto;
   background-color: white;
   /* border: solid 1px; */
   position: relative;
@@ -819,7 +821,6 @@ Istanbul
   border-radius: 3px;
   color: var(--clr-primary-1);
   cursor: pointer;
-  /* border: solid 1px; */
 }
 .tag {
   font-size: 14px;
@@ -888,6 +889,10 @@ Pamukkale EPS 01
 .refLink {
   color: var(--clr-black-1);
   text-decoration: underline;
+}
+
+.article-hr {
+  width: 80vw;
 }
 
 /*
