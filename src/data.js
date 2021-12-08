@@ -31,7 +31,7 @@ export const links = [
   },
   {
     id: 5,
-    url: "/Istanbul",
+    url: "/TurkeyArticles",
     text: "Istanbul",
     icon: <FiSun />,
   },

@@ -4,12 +4,13 @@ const IstanbulFirst = () => {
   return (
     <div>
       <img
-        src="https://i.imgur.com/oIMLX61.jpg?1"
+        src="https://i.imgur.com/sjSx1wR.jpg"
         alt=""
         className="istanbul-pic article-pic"
       />
       <div className="DB-center">
         <h3>在伊斯坦堡的怦然心動 – 與土耳其人初次的單獨會面</h3>
+        <br />
         <p>
           這天是我第一次單獨和土耳其朋友出來，我有點不知道該怎麼定義這天的行程 —
           電影、晚餐＆酒吧，可以說是幾近曖昧或是情侶間才會有的約會，當時我內心很天人交戰到底要不要赴約，一方面覺得既然都出國交換，就應該要跟當地人有所交流，而不是像在台灣一樣常常把自己封印在家XD；另一方面又擔心後續的發展，會不會造成不必要的誤會。

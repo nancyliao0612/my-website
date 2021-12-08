@@ -4,17 +4,12 @@ import { Link } from "react-router-dom";
 const Istanbul = () => {
   return (
     <section className="istanbul-section">
-      <img
-        src="https://i.imgur.com/KOoHhDS.png"
-        alt="istanbul"
-        className="title-label"
-      />
       <div className="article-section">
         <div className="article-container-2">
           <Link to="/IstanbulFirst">
             <img
-              src="https://i.imgur.com/oIMLX61.jpg?1"
-              alt=""
+              src="https://i.imgur.com/pgoZxOd.jpg"
+              alt="istanbulPic"
               className="istanbul-pic"
             />
           </Link>
