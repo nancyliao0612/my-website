@@ -9,6 +9,7 @@ const PamukkaleArticle = () => {
         alt="pamukkale"
         className="istanbul-pic article-pic"
       />
+      <h2 className="article-title">【趴趴走👣】冬季訪雪白棉堡（Pamukkale）</h2>
       <div className="DB-center">
         <div className="summary-container">
           <div className="date-summary">

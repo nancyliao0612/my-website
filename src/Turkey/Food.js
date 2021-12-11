@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Pamukkale = () => {
+const Food = () => {
   return (
     <section className="istanbul-section">
       <div className="article-section">
         <div className="article-container-2">
-          <Link to="/pamukkaleArticle">
+          <Link to="/FoodcostArticle">
             <img
               src="https://i.imgur.com/wTfIVgs.jpg"
-              alt="PamukkalePic"
+              alt="food"
               className="istanbul-pic"
             />
           </Link>
@@ -18,7 +18,7 @@ const Pamukkale = () => {
             蔬菜水果多少摳摳💰？牛奶超級便宜？
           </h3>
           <p className="istanbul-intro"></p>
-          <Link to="/pamukkaleArticle">
+          <Link to="/FoodcostArticle">
             <button className="read-more">Read More</button>
           </Link>
         </div>
@@ -27,4 +27,4 @@ const Pamukkale = () => {
   );
 };
 
-export default Pamukkale;
+export default Food;

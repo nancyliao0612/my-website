@@ -21,9 +21,11 @@ const Home = () => {
             className="title-label"
           />
         </Link>
-        <Food />
-        <Pamukkale />
-        <Istanbul />
+        <div className="placeInRow">
+          <Food />
+          <Pamukkale />
+          <Istanbul />
+        </div>
         <br />
         <br />
       </section>
