@@ -8,18 +8,16 @@ const Pamukkale = () => {
         <div className="article-container-2">
           <Link to="/pamukkaleArticle">
             <img
-              src="https://i.imgur.com/i17Ordm.jpg"
+              src="https://i.imgur.com/wTfIVgs.jpg"
               alt="PamukkalePic"
               className="istanbul-pic"
             />
           </Link>
           <h3 className="istanbul-title">
-            【趴趴走👣】冬季訪雪白棉堡（Pamukkale）
+            【生活實錄】土耳其食品物價詳細清單整理 –
+            蔬菜水果多少摳摳💰？牛奶超級便宜？
           </h3>
-          <p className="istanbul-intro">
-            Pamukkale 是由兩個土耳其文組成，pamuk 意指「棉」；kale
-            指的是「碉堡」，因此 Pamukkale 又名「棉花堡」...
-          </p>
+          <p className="istanbul-intro"></p>
           <Link to="/pamukkaleArticle">
             <button className="read-more">Read More</button>
           </Link>

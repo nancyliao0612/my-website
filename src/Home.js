@@ -5,6 +5,7 @@ import Latesthikes from "./home/Latesthikes";
 import Istanbul from "./home/Istanbul";
 import { Link } from "react-router-dom";
 import Pamukkale from "./Turkey/Pamukkale";
+import Food from "./Turkey/Food";
 // import Footer from "./Footer";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             className="title-label"
           />
         </Link>
+        <Food />
         <Pamukkale />
         <Istanbul />
         <br />

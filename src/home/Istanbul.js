@@ -14,7 +14,7 @@ const Istanbul = () => {
             />
           </Link>
           <h3 className="istanbul-title">
-            在伊斯坦堡的怦然心動 – 與土耳其人初次的單獨會面
+            【邂逅】在伊斯坦堡的怦然心動 – 與土耳其人初次的單獨會面
           </h3>
           <p className="istanbul-intro">
             這天是第一次單獨和 Anıl
