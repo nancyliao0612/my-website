@@ -1,5 +1,6 @@
 import React from "react";
-import { AiFillClockCircle } from "react-icons/ai";
+import { IoTimeOutline } from "react-icons/io5";
+import { BsDot } from "react-icons/bs";
 
 const PamukkaleArticle = () => {
   return (
@@ -14,7 +15,7 @@ const PamukkaleArticle = () => {
         <div className="summary-container">
           <div className="date-summary">
             &nbsp;
-            <AiFillClockCircle className="total-icons" />
+            <IoTimeOutline className="total-icons" />
             &nbsp;2021/11/21（日）– 11/22（一）
           </div>
         </div>
@@ -34,10 +35,12 @@ const PamukkaleArticle = () => {
           app
           可以即時查詢到站時間，只要途中稍有一個環節出錯，我很可能就會錯過登機時間（嘆三口氣）。
         </p>
-        <br />
-        <hr />
-        <br />
-        <h3>伊斯坦堡機場接駁巴士 havaist</h3>
+        <div className="devider">
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+        </div>
+        <h2>伊斯坦堡機場接駁巴士 havaist</h2>
         <div>
           <h5>
             票價查詢＆訂票 👉{" "}
@@ -72,9 +75,11 @@ const PamukkaleArticle = () => {
             </li>
           </ul>
         </div>
-        <br />
-        <hr />
-        <br />
+        <div className="devider">
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+        </div>{" "}
         <img src="https://i.imgur.com/dssVcgs.jpg" alt="airport" />
         <p className="imgCaption">搭土耳其航空來回機票共 $2100 台幣🥳</p> <br />
         <p>謝天謝地，我沒有遭遇太多驚魂，清晨 6 點順利地抵達機場。</p>
@@ -86,11 +91,12 @@ const PamukkaleArticle = () => {
         </p>
         <br />
         <img src="https://i.imgur.com/w2DDJbP.jpg" alt="DNZ-airport" />
-        <br />
-        <br />
-        <hr />
-        <br />
-        <h3>以公雞為象徵的丹尼斯利（Denizli）</h3>
+        <div className="devider">
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+        </div>
+        <h2>以公雞為象徵的丹尼斯利（Denizli）</h2>
         <p>
           丹尼斯利（Denizli）是個人口&nbsp;
           <a
@@ -168,11 +174,12 @@ const PamukkaleArticle = () => {
         </p>
         <br />
         <img src="https://i.imgur.com/1YcvUP4.jpg" alt="Piskin Otel" />
-        <br />
-        <br />
-        <hr />
-        <br />
-        <h3>啟程前往棉堡（Pamukkale）</h3>
+        <div className="devider">
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+        </div>
+        <h2>啟程前往棉堡（Pamukkale）</h2>
         <h5>交通：</h5>
         <div>
           <ul className="text-bullet">

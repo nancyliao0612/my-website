@@ -12,7 +12,7 @@ const FoodcostArticle = () => {
         【生活實錄】土耳其食品物價詳細整理 –
         蔬菜水果多少摳摳💰？自己煮會超級省？
       </h2>
-      <div className="DB-center">
+      <div className="DB-c enter">
         <p>期中作業轟炸，努力產文，未完待續.....</p>
         <h3>蔬菜 Veggie</h3>
         <table className="food-table">

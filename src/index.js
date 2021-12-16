@@ -13,6 +13,7 @@ import Turkey from "./Turkey/Turkey";
 import PamukkaleArticle from "./Turkey/PamukkaleArticle";
 import FoodcostArticle from "./Turkey/FoodcostArticle";
 import IstanbulFirst from "./Turkey/IstanbulFirst";
+import PcrArticle from "./Turkey/PcrArticle";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 ReactDOM.render(
@@ -35,6 +36,9 @@ ReactDOM.render(
         </Route>
         <Route path="/FoodcostArticle">
           <FoodcostArticle />
+        </Route>
+        <Route path="/PcrArticle">
+          <PcrArticle />
         </Route>
         <Route path="/pamukkaleArticle">
           <PamukkaleArticle />

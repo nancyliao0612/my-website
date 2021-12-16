@@ -6,6 +6,7 @@ import Istanbul from "./home/Istanbul";
 import { Link } from "react-router-dom";
 import Pamukkale from "./Turkey/Pamukkale";
 import Food from "./Turkey/Food";
+import PCR from "./Turkey/PCR";
 // import Footer from "./Footer";
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
             className="title-label"
           />
         </Link>
+        <PCR />
         <div className="placeInRow">
           <Food />
           <Pamukkale />

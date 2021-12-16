@@ -76,7 +76,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 1;
-  background: var(--clr-primary-2);
+  background: white;
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -96,9 +96,10 @@ nav {
   color: var(--clr-black-1);
 }
 .logo {
-  height: 45px;
+  height: 35px;
+  margin-top: 3px;
   /* border: solid 1px; */
-  margin-left: -0.5rem;
+  margin-left: -0.4rem;
 }
 
 /*
@@ -459,10 +460,9 @@ Home - Latest Hikes
 .article-section {
   display: flex;
   justify-content: center;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   /* border: solid 1px; */
   width: 100vw;
-  height: auto;
 }
 
 .article-container {
@@ -785,7 +785,7 @@ Istanbul
 
 .article-container-2 {
   width: 75vw;
-  height: 400px;
+  height: auto;
   /* border: solid 1px; */
   margin: 0 auto;
 }
@@ -814,6 +814,7 @@ Istanbul
 }
 .read-more {
   background-color: var(--clr-primary-2);
+  font-size: 0.9rem;
   margin: 5px 0;
   padding: 10px 15px;
   border: none;
@@ -970,6 +971,50 @@ End of Turkey
 ===============
 */
 
+/*
+=============== 
+PCR
+===============
+*/
+
+.DB-center img.meme {
+  background-position: left top;
+  /* border: solid 1px; */
+  height: 200px;
+  width: 200px;
+}
+
+.meme-container {
+  display: flex;
+  justify-content: center;
+}
+
+.DB-center h2 {
+  margin-bottom: 1.5rem;
+}
+
+.devider {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  /* border: solid 1px; */
+}
+
+.devider .dot {
+  margin: 0 3px;
+  /* border: solid 1px; */
+}
+
+img.verticle-img {
+  height: auto;
+}
+
+/*
+=============== 
+End of PCR
+===============
+*/
+
 @media screen and (min-width: 576px) {
   .nav-center {
     max-width: var(--max-width);
@@ -1033,6 +1078,7 @@ End of Turkey
   }
   .article-container-2 {
     width: 100%;
+    /* border: solid 1px; */
   }
   .istanbul-pic {
     object-fit: cover;

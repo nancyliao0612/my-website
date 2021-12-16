@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="nav-header">
           <a href="/">
             <img
-              src="https://i.imgur.com/vASotwZ.png?1"
+              src="https://i.imgur.com/aixH85L.png"
               className="logo"
               alt="logo"
             />
