@@ -69,8 +69,11 @@ const PcrArticle = () => {
         <h2>前往醫院</h2>
         <p>天剛破曉時，我就出發前往醫院。</p>
         <p>
-          好在離我們公寓 1.4 公里就有一間公立醫院 —
-          <a href="https://www.google.com.tr/maps/place/G%C3%B6ztepe+%C5%9Eehir+Hastanesi/@40.9867459,29.0466621,15z/data=!4m5!3m4!1s0x14cac7780cbb94d3:0x83d0c5c87c76dec5!8m2!3d40.9842535!4d29.056882?hl=zh-TW&shorturl=1">
+          好在離我們公寓 1.4 公里就有一間公立醫院 —&nbsp;
+          <a
+            href="https://www.google.com.tr/maps/place/G%C3%B6ztepe+%C5%9Eehir+Hastanesi/@40.9867459,29.0466621,15z/data=!4m5!3m4!1s0x14cac7780cbb94d3:0x83d0c5c87c76dec5!8m2!3d40.9842535!4d29.056882?hl=zh-TW&shorturl=1"
+            className="DB-link"
+          >
             Göztepe Şehir Hastanesi
           </a>
           ，步行 15 分鐘左右就可抵達。
@@ -160,8 +163,14 @@ const PcrArticle = () => {
         <br />
         <p>醫生問診完五分鐘內，你的手機就會收到醫院傳來的簡訊。</p>
         <p>
-          主要告知你 PCR 結果會在 6 至 24 小時出來，可以到 e-nabiz
-          個人健康系統下載篩檢結果（輸入 barcode 號碼以及居留證末四碼）
+          主要告知你 PCR 結果會在 6 至 24 小時出來，可以到&nbsp;
+          <a
+            href="https://enabiz.gov.tr/PcrTestSonuc/Index"
+            className="DB-link"
+          >
+            e-nabiz 個人健康系統
+          </a>
+          &nbsp;下載篩檢結果（輸入 barcode 號碼以及居留證末四碼）
         </p>
         <br />
         <img
@@ -186,7 +195,8 @@ const PcrArticle = () => {
           的欄位，N！E！G！A！T！I！V！E！（簡直熱淚盈眶😭😭😭😭😭😭😭😭）
         </p>
         <br />
-        <p>下一秒，立馬興奮地打給我媽，讓她不用擔心。</p>
+        <p>下一秒，立馬興奮地打給我媽，告知這個好消息。</p>
+        <p>我想最感到抱歉就是讓我的家人跟著提心吊膽。</p>
         <p>
           還好！一切沒事！<strike>（暫時的）</strike>
         </p>
@@ -196,13 +206,45 @@ const PcrArticle = () => {
           <BsDot className="dot" />
           <BsDot className="dot" />
         </div>
+        <h2>總結</h2>
+        <div>
+          <ul className="text-bullet">
+            <li>在當地做 PCR 不需事前預約</li>
+            <li>
+              準備事項：居留證（才可以免費施打）、手機號碼、護照（以備不時之需）、一顆冷靜的心
+            </li>
+            <li>確診結果查詢（6-24小時）：</li>
+            <ul className="text-bullet">
+              <li>
+                陰性：&nbsp;
+                <a
+                  href="https://enabiz.gov.tr/PcrTestSonuc/Index"
+                  className="DB-link"
+                >
+                  https://enabiz.gov.tr/PcrTestSonuc/Index
+                </a>
+              </li>
+              <li>陽性：簡訊通知</li>
+            </ul>
+          </ul>
+        </div>
+        <div className="devider">
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+        </div>
         <br />
         <h2>後記</h2>
         <p>等待結果的期間，內心真的非常煎熬，焦慮心態驅使我一直往壞處想。</p>
-        <p>並深刻體悟到「身體健康是人生最大的幸福」！</p>
+        <p>並深刻體悟到「身體健康就是人生最大的幸福」！</p>
         <br />
-        <p>也很抱歉讓我的家人跟著提心吊膽。</p>
-        <br />
+        <p>
+          有了這次經歷，我也不斷自我反思，真的有必要把得 COVID 視為世界末日嗎？
+        </p>
+        <p>
+          既然都打了兩劑疫苗，已經大幅減低重症及死亡的風險，而染疫可能就像是個小感冒一樣。
+        </p>
+        <p>自己是不是其實太過戒慎恐懼！？</p>
         <p>我自己一直都保有屬於台灣人的特殊文化根性 — 極度惶恐染疫！</p>
         <p>在台灣，看到確診數破百就有如末日來臨一般。</p>
         <p>
@@ -211,18 +253,13 @@ const PcrArticle = () => {
         <br />
         <p>隔國就恍如隔世</p>
         <br />
-        <p>但我也不斷自我反思，真的有必要把得 COVID 視為世界末日嗎？</p>
         <p>
-          既然都打了兩劑疫苗，已經大幅減低重症及死亡的風險，而染疫可能就像是個小感冒一樣。
-        </p>
-        <p>自己是不是其實太過戒慎恐懼！？</p>
-        <br />
-        <p>
-          但對我來說，我還是有自己一套防疫的標準，如果我都已經盡力做到了，結果還是染疫，我覺得心裡也會比「完全不防疫」還要好受一些
+          但對我來說，我還是堅持有自己的一套防疫標準，如果我都已經盡力做到了，結果還是染疫，想必內心也會比「完全不防疫」還要好受一些
         </p>
         <br />
-        <p>以上，希望對要去做 PCR 檢測或是等待 PCR 結果的你有幫助！</p>
-        <p>你的一切緊張情緒都是正常的，祝福你的結果也是陰性！</p>
+        <p>最後，謝謝 Wendy 提供的資訊及室友的互相扶持</p>
+        <p>以上，希望對要在土耳其做 PCR 檢測或是等待 PCR 結果的你有幫助！</p>
+        <p>祝平安喜樂！</p>
         <br />
       </div>
     </div>

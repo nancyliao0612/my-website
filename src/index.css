@@ -685,6 +685,7 @@ div span {
 }
 .text-bullet {
   padding: 0.3rem 1.5rem;
+
   /* border: solid 1px; */
 }
 .text-btwImg {
@@ -716,6 +717,7 @@ div span {
 
 .text-bullet li {
   list-style: initial;
+  line-height: 1.8rem;
   /* border: solid 1px; */
 }
 
