@@ -59,7 +59,7 @@ const PamukkaleArticle = () => {
           </ul>
           <br />
           <h5>
-            時刻表 👉{" "}
+            時刻表 👉
             <a
               href="https://www.istairport.com/en/passenger/transport/airport-transfers/havaist"
               target="_blank"

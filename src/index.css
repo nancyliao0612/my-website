@@ -96,7 +96,7 @@ nav {
   color: var(--clr-black-1);
 }
 .logo {
-  height: 35px;
+  height: 40px;
   margin-top: 3px;
   /* border: solid 1px; */
   margin-left: -0.4rem;
@@ -815,14 +815,9 @@ Istanbul
   padding: 5px;
 }
 .read-more {
-  background-color: var(--clr-primary-2);
-  font-size: 0.9rem;
   margin: 5px 0;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 3px;
-  color: var(--clr-primary-1);
   cursor: pointer;
+  width: 7rem;
 }
 .tag {
   font-size: 14px;
@@ -926,6 +921,10 @@ td {
   padding: 3px;
   padding-left: 10px;
   line-height: 1.3rem;
+}
+
+.food-table {
+  margin: 0 auto;
 }
 
 .food-table thead {
@@ -1082,9 +1081,13 @@ End of PCR
     width: 100%;
     /* border: solid 1px; */
   }
-  .istanbul-pic {
-    object-fit: cover;
-    height: 500px;
+
+  /* About section */
+
+  .blog-intro,
+  .quote {
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 
   /*myPic seciton*/
@@ -1105,8 +1108,12 @@ End of PCR
   .aboutPic {
     background-attachment: fixed;
   }
-  .article-pic {
-    height: 400px;
+  img.article-pic {
+    object-fit: cover;
+    background-position: center;
+    height: 500px;
+    border: solid 1px;
+    margin-bottom: 25px;
   }
 
   .article-title {
@@ -1123,8 +1130,11 @@ End of PCR
     width: initial;
   }
   .istanbul-section {
-    /* display: initial; */
-    height: 550px;
+    height: auto;
+    /* border: solid 1px; */
+  }
+  .title-container {
+    /* height: 100px; */
     /* border: solid 1px; */
   }
 
@@ -1132,13 +1142,13 @@ End of PCR
     /* display: initial; */
     /* border: solid 1px; */
     width: 20vw;
-    height: 450px;
+    height: auto;
   }
   .placeInRow {
     display: flex;
     /* border: solid 1px; */
     width: 100vw;
-    height: 650px;
+    height: auto;
     background: white;
     padding: 0 200px;
   }
@@ -1156,7 +1166,7 @@ End of PCR
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 700px;
+    height: auto;
     /* margin-top: 200px; */
   }
   .hike-section .article-section {
@@ -1167,10 +1177,7 @@ End of PCR
   .hike-section .title-container {
     margin: 0 auto;
   }
-  .hike-section .title-label {
-    margin-top: 120px;
-    /* border: solid 1px; */
-  }
+
   .placeInRow-2 {
     display: flex;
     align-items: center;

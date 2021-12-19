@@ -9,7 +9,7 @@ const Latesthikes = () => {
     <section className="hike-section">
       <div className="title-container">
         <img
-          src="https://i.imgur.com/vfmEwFf.png"
+          src="https://i.imgur.com/vfmEwFf.png?1"
           alt="Latest Hikes"
           className="title-label"
         />

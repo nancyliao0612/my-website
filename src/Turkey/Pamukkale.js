@@ -21,7 +21,7 @@ const Pamukkale = () => {
             指的是「碉堡」，因此 Pamukkale 又名「棉花堡」...
           </p>
           <Link to="/pamukkaleArticle">
-            <button className="read-more">Read More</button>
+            <img className="read-more" src="https://i.imgur.com/zRVuAej.jpg" />
           </Link>
         </div>
       </div>

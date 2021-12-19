@@ -218,10 +218,11 @@ const PcrArticle = () => {
               <li>
                 陰性：&nbsp;
                 <a
-                  href="https://enabiz.gov.tr/PcrTestSonuc/Index"
+                  href="https://enabiz.gov.tr/
+                  PcrTestSonuc/Index"
                   className="DB-link"
                 >
-                  https://enabiz.gov.tr/PcrTestSonuc/Index
+                  點我連結
                 </a>
               </li>
               <li>陽性：簡訊通知</li>

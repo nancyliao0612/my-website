@@ -19,7 +19,7 @@ const Food = () => {
           </h3>
           <p className="istanbul-intro"></p>
           <Link to="/FoodcostArticle">
-            <button className="read-more">Read More</button>
+            <img className="read-more" src="https://i.imgur.com/zRVuAej.jpg" />
           </Link>
         </div>
       </div>
