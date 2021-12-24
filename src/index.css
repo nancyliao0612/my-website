@@ -366,13 +366,6 @@ Home - aboutMe
   z-index: -99;
 }
 
-/* .underline {
-  width: 4rem;
-  height: 0.12rem;
-  background: var(--clr-primary-3);
-  margin: 0.5rem;
-} */
-
 .aboutPic {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -738,6 +731,7 @@ div span {
 .img-double {
   display: flex;
   justify-content: space-between;
+  /* border: solid 1px; */
 }
 
 div .style-1 {
@@ -748,6 +742,13 @@ div .style-1 {
 div .style-2 {
   width: 49%;
   height: 300px;
+  /* border: solid 1px; */
+}
+
+div .style-3 {
+  width: 49%;
+  height: 160px;
+  object-fit: cover;
   /* border: solid 1px; */
 }
 
@@ -1026,10 +1027,13 @@ End of PCR
     padding: 0 1rem;
     /* border: solid 1px; */
   }
+
   .nav-header {
     padding: 0;
+    cursor: pointer;
     /* border: solid 1px; */
   }
+
   .nav-toggle {
     display: none;
   }
@@ -1101,10 +1105,7 @@ End of PCR
     width: 100%;
     object-fit: cover;
   }
-  div .style-1 {
-    width: 49%;
-    height: 250px;
-  }
+
   .aboutPic {
     background-attachment: fixed;
   }
@@ -1112,7 +1113,7 @@ End of PCR
     object-fit: cover;
     background-position: center;
     height: 500px;
-    border: solid 1px;
+    /* border: solid 1px; */
     margin-bottom: 25px;
   }
 
@@ -1133,10 +1134,6 @@ End of PCR
     height: auto;
     /* border: solid 1px; */
   }
-  .title-container {
-    /* height: 100px; */
-    /* border: solid 1px; */
-  }
 
   .article-section {
     /* display: initial; */
@@ -1152,6 +1149,7 @@ End of PCR
     background: white;
     padding: 0 200px;
   }
+
   .istanbul-pic {
     width: 100%;
     height: 200px;
@@ -1183,5 +1181,20 @@ End of PCR
     align-items: center;
     justify-content: center;
     /* border: solid 1px; */
+  }
+
+  /* article images */
+  img.verticle-img {
+    height: auto;
+    /* border: solid 1px; */
+  }
+
+  div .style-2,
+  div .style-1 {
+    width: 49%;
+  }
+  div .style-3 {
+    width: 49%;
+    height: 270px;
   }
 }

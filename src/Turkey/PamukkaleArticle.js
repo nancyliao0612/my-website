@@ -41,6 +41,7 @@ const PamukkaleArticle = () => {
           <BsDot className="dot" />
         </div>
         <h2>伊斯坦堡機場接駁巴士 havaist</h2>
+        <p></p>
         <div>
           <h5>
             票價查詢＆訂票 👉{" "}
@@ -54,7 +55,7 @@ const PamukkaleArticle = () => {
               到你的信箱，上車出示條碼給車長掃描即可！
             </li>
             <li>
-              一般來說，你也可以在購票亭付現買票，但如果你跟我一樣大半夜的要搭接駁巴士，那就只能線上付款了
+              一般來說，你也可以在購票亭付現買票，但如果你跟我一樣大半夜的要搭接駁巴士，那就只能線上付款了～
             </li>
           </ul>
           <br />
@@ -72,6 +73,23 @@ const PamukkaleArticle = () => {
             <li>
               因應疫情，該時刻表可能時有變動，出發前可以再到 IST
               機場的官方網站確認
+            </li>
+          </ul>
+          <h5>
+            搭乘地點 👉
+            <a
+              href="https://hava.ist/en/Voyage/WhereMyBus"
+              target="_blank"
+              className="DB-link"
+            >
+              havaist 官方網站
+            </a>
+          </h5>
+          <ul className="text-bullet smallSize">
+            <li>查詢離自己住宿地點最近的巴士站，還提供你預計搭乘的時間</li>
+            <li>
+              如果遇上尖峰時段，建議時間可以再抓保守一點～伊斯坦堡的交通是沒有規則的，切身體悟
+              QQ
             </li>
           </ul>
         </div>
@@ -233,7 +251,11 @@ const PamukkaleArticle = () => {
           小時悠閒地欣賞棉堡的景色，並參觀希拉波利斯遺址。
         </p>
         <br />
-        <hr />
+        <div className="devider">
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+        </div>{" "}
         <br />
         <h3>棉堡票價＆開放時間</h3>
         <div>
@@ -330,7 +352,68 @@ const PamukkaleArticle = () => {
           />
         </div>
         <br />
-        <hr />
+        <div className="devider">
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+        </div>
+        <h2>後記</h2>
+        <p>
+          當時我悠悠地在木板上散步，碰巧經過一個小男孩，看到他在幫一群人拍照，心中猶豫了幾秒，並決定主動上前詢問需不需要幫忙合照。
+        </p>
+        <p>
+          正當我困惑小男孩說的土耳其語時，突然我身邊出現一個白人面孔，跟我說他們剛剛已經有路人幫他們拍過合照了。
+        </p>
+        <br />
+        <p>簡單互相問候，才知道他來自德國，和他朋友現在在土耳其公路旅行。</p>
+        <p>
+          當他發現我是自己出來獨旅後，很驚訝也很佩服我一個人旅行的勇氣，並接著熱情地邀請我加入他們的晚餐。
+        </p>
+        <p>就這樣，我們一來一往地攀談下去。</p>
+        <br />
+        <p>後來也見到他另外兩位朋友，是一對來自印度和烏克蘭的情侶～</p>
+        <p>
+          我曾經去過印度，聊到當時我主要是想去 Kashmir
+          爬山，結果他竟然就來自喀什米爾！！真的是直接聊爆 XD
+        </p>
+        <br />
+        <p>
+          從相遇的那一刻到一起共進晚餐，我仔細地觀察他們的互動方式和對話內容，
+          <b>內心從沒停止估算「這群人的可信度」是多少</b>
+          <strike>（真的不要再說我很天真很容易被騙XDD）</strike>
+        </p>
+        <br />
+        <p>
+          後來他們甚至決定住在我待的旅館，早上一個人 check
+          in，晚上帶回三個朋友入住，超鬧 XD
+        </p>
+        <p>
+          每當命運賦予我站在「理智與冒險」交叉路口的機會，我總是會毫不猶豫地選擇後者。
+        </p>
+        <p>
+          就這樣...我完全霍出去了，直接上了他們的車！反正也不是第一次這樣衝動😂
+        </p>
+        <p>隔一天他們還很好心地載我到機場～</p>
+        <div className="devider">
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+        </div>
+        <p>我相信世上好人居多，但不可否認壞人必然的存在。</p>
+        <p>
+          而且只要遇到一個，就只需一個意圖不軌的人，這足以給你帶來毀滅性的後果。
+        </p>
+        <p>
+          但若因此戰戰兢兢，拒絕與陌生人接觸，你或許會安然無恙，但也
+          <b>等同錯失一段與陌生人美好的邂逅</b>。
+        </p>
+        <br />
+        <p>或許每個人都需要練習相信陌生人😌。</p>
+        <div className="devider">
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+          <BsDot className="dot" />
+        </div>
         <br />
         <div className="reference">
           <h5>參考資料</h5>

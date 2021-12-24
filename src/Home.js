@@ -22,10 +22,12 @@ const Home = () => {
             className="title-label"
           />
         </Link>
-        <PCR />
         <div className="placeInRow">
+          <PCR />
           <Food />
           <Pamukkale />
+        </div>
+        <div className="placeInRow">
           <Istanbul />
         </div>
         <br />

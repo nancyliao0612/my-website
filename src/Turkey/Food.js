@@ -14,8 +14,7 @@ const Food = () => {
             />
           </Link>
           <h3 className="istanbul-title">
-            【生活實錄】土耳其食品物價詳細清單整理 –
-            蔬菜水果多少摳摳💰？牛奶超級便宜？
+            【生活實錄】生活在土耳其要打強心針，里拉一日暴跌15%，通膨高達 50%！
           </h3>
           <p className="istanbul-intro"></p>
           <Link to="/FoodcostArticle">

@@ -150,7 +150,7 @@ const PcrArticle = () => {
         <h2>院方簡訊＆結果查詢</h2>
         <div className="img-double">
           <img
-            className="style-2"
+            className="style-3"
             src="https://i.imgur.com/Vz3I0DY.jpg?1"
             alt="message"
           />

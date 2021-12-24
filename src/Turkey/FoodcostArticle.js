@@ -9,8 +9,7 @@ const FoodcostArticle = () => {
         className="istanbul-pic article-pic"
       />
       <h2 className="article-title">
-        【生活實錄】土耳其食品物價詳細整理 –
-        蔬菜水果多少摳摳💰？自己煮會超級省？
+        【生活實錄】生活在土耳其要打強心針，里拉一日暴跌15%，通膨高達 50%！
       </h2>
       <div className="DB-center">
         <p>期中作業轟炸，努力產文，未完待續.....</p>
