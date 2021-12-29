@@ -145,7 +145,7 @@ const PcrArticle = () => {
           <BsDot className="dot" />
           <BsDot className="dot" />
           <BsDot className="dot" />
-        </div>{" "}
+        </div>
         <br />
         <h2>院方簡訊＆結果查詢</h2>
         <div className="img-double">
