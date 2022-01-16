@@ -14,7 +14,7 @@ const Rumination = () => {
             />
           </Link>
           <h3 className="istanbul-title">
-            【交換生實錄】五件希望我當初交換就知道的事情
+            【有感而發】五件希望我當初交換就知道的事情
           </h3>
           <p className="istanbul-intro"></p>
           <Link to="/ruminationArticle">

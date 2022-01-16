@@ -1017,6 +1017,23 @@ End of PCR
 ===============
 */
 
+/*
+=============== 
+Rumination
+===============
+*/
+span.text-small {
+  /* border: solid 1px; */
+  display: contents;
+  font-size: 1rem;
+}
+
+/*
+=============== 
+End of Rumination
+===============
+*/
+
 @media screen and (min-width: 576px) {
   .nav-center {
     max-width: var(--max-width);
