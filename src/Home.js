@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Pamukkale from "./Turkey/Pamukkale";
 import Food from "./Turkey/Food";
 import PCR from "./Turkey/PCR";
+import Rumination from "./Turkey/Rumination";
 // import Footer from "./Footer";
 
 const Home = () => {
@@ -23,12 +24,13 @@ const Home = () => {
           />
         </Link>
         <div className="placeInRow">
-          <PCR />
-          <Food />
+          <Rumination />
           <Pamukkale />
+          <Istanbul />
         </div>
         <div className="placeInRow">
-          <Istanbul />
+          <PCR />
+          <Food />
         </div>
         <br />
         <br />

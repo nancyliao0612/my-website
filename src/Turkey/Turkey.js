@@ -2,6 +2,7 @@ import React from "react";
 import Istanbul from "../home/Istanbul";
 import Pamukkale from "./Pamukkale";
 import Food from "./Food";
+import Rumination from "./Rumination";
 
 const Turkey = () => {
   return (
@@ -13,6 +14,8 @@ const Turkey = () => {
           alt="istanbul"
           className="title-label"
         />
+        <Rumination />
+        <hr className="article-hr" />
         <Food />
         <hr className="article-hr" />
         <Pamukkale />
