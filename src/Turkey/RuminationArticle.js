@@ -63,6 +63,9 @@ const RuminationArticle = () => {
           殊不知來到伊斯坦堡，尤其開學之後，我就像某個開關被切換似的，瞬間進入認真向學的好學生模式XD
         </p>
         <br />
+        <img src="https://i.imgur.com/pw9mV1R.jpg?3" alt="campus" />
+        <br />
+        <br />
         <p>原因有二：</p>
         <p>
           首先是我對所選的課相當感興趣，每一堂課都讓我很有收穫，也可能與學習動機或心態有關，讓我不自覺地更加積極，甚至會舉手發問、課後寫信跟老師討論他上課的內容，這些都是我在台灣不會做的事情
@@ -281,6 +284,11 @@ const RuminationArticle = () => {
         </p>
         <br />
         <b>第二～四個月：租土耳其朋友的公寓</b>
+        <br />
+        <br />
+        <img src="https://i.imgur.com/tSK5rxv.jpg?2" alt="apartment" />
+        <br />
+        <br />
         <p>公寓大約 40 坪，和室友兩人共用廚房和浴室，並有各自的房間</p>
         <p>
           這間公寓相較上間寬敞許多，價位幾乎是 Airbnb 的 1/3，且周圍生活機能佳。
@@ -357,6 +365,9 @@ const RuminationArticle = () => {
           此外，土耳其人都超級熱情，會約你下課後跟他們去吃午餐，課業上有疑慮都很樂意提供協助～
         </p>
         <br />
+        <img src="https://i.imgur.com/hHniLRl.jpg?1" alt="new-year-photo"></img>
+        <br />
+        <br />
         <p>而不管是本地人或是其他國家的交換生，都會很好奇你來自的國家～</p>
         <p>
           而身為一位在異鄉的交換生，就像是台灣的小小外交官，代表外國人對台灣的印象！
@@ -364,6 +375,8 @@ const RuminationArticle = () => {
         <p>
           所以真心建議，像是「台灣的食物、文化歷史、中國與台灣的關係XDD、為什麼想來土耳其」等等很容易會被問爆的問題，都可以花點心思準備～（有些人可能天生口才就很好，但如果你跟我一樣和陌生人講話常常會口吃、不知所措的話，真的可以先打個草稿ㄛ）
         </p>
+        <br />
+        <img src="https://i.imgur.com/wM0VyRU.jpg?1" alt="new-year" />
         <br />
         <div className="devider">
           <BsDot className="dot" />
