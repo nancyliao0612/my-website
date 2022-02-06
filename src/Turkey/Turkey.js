@@ -1,10 +1,20 @@
 import React from "react";
-import Istanbul from "../home/Istanbul";
-import Pamukkale from "./Pamukkale";
-import Food from "./Food";
-import Rumination from "./Rumination";
+import cardData from "../cardData";
+import Card from "./Card";
 
 const Turkey = () => {
+  const card = cardData.map((item) => {
+    return (
+      <Card
+        key={item.id}
+        coverImg={item.coverImg}
+        title={item.title}
+        link={item.link}
+        discription={item.discription}
+      />
+    );
+  });
+
   return (
     <>
       <div className="emptySpace"></div>
@@ -14,13 +24,7 @@ const Turkey = () => {
           alt="istanbul"
           className="title-label"
         />
-        <Rumination />
-        <hr className="article-hr" />
-        <Food />
-        <hr className="article-hr" />
-        <Pamukkale />
-        <hr className="article-hr" />
-        <Istanbul />
+        <div className="placeInRow">{card}</div>
         <br />
         <br />
       </section>

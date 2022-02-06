@@ -2,15 +2,24 @@ import React from "react";
 import Mypic from "./home/Mypic";
 import About from "./home/About";
 import Latesthikes from "./home/Latesthikes";
-import Istanbul from "./home/Istanbul";
 import { Link } from "react-router-dom";
-import Pamukkale from "./Turkey/Pamukkale";
-import Food from "./Turkey/Food";
-import PCR from "./Turkey/PCR";
-import Rumination from "./Turkey/Rumination";
+import cardData from "./cardData";
+import Card from "./Turkey/Card";
 // import Footer from "./Footer";
 
 const Home = () => {
+  const card = cardData.map((item) => {
+    return (
+      <Card
+        key={item.id}
+        coverImg={item.coverImg}
+        title={item.title}
+        link={item.link}
+        discription={item.discription}
+      />
+    );
+  });
+
   return (
     <>
       <Mypic />
@@ -23,16 +32,7 @@ const Home = () => {
             className="title-label"
           />
         </Link>
-        <div className="placeInRow">
-          <Rumination />
-          <Pamukkale />
-          <Istanbul />
-        </div>
-        <div className="placeInRow">
-          <PCR />
-          <Food />
-        </div>
-        <br />
+        <div className="placeInRow">{card}</div>
         <br />
       </section>
       <Latesthikes />

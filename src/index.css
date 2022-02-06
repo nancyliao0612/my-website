@@ -1149,6 +1149,7 @@ End of Rumination
   }
   .istanbul-section {
     height: auto;
+    /* flex-direction: row; */
     /* border: solid 1px; */
   }
 
@@ -1160,11 +1161,11 @@ End of Rumination
   }
   .placeInRow {
     display: flex;
+    flex-wrap: wrap;
     /* border: solid 1px; */
-    width: 100vw;
+    width: 75vw;
     height: auto;
     background: white;
-    padding: 0 200px;
   }
 
   .istanbul-pic {

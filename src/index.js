@@ -44,7 +44,7 @@ ReactDOM.render(
         <Route path="/PcrArticle">
           <PcrArticle />
         </Route>
-        <Route path="/pamukkaleArticle">
+        <Route path="/PamukkaleArticle">
           <PamukkaleArticle />
         </Route>
         <Route path="/IstanbulFirst">
