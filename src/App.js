@@ -44,7 +44,10 @@ function App() {
             <FoodcostArticle />
           </Route>
           <Route path="/RuminationArticle">
-            <RuminationArticle />
+            <RuminationArticle
+              darkMode={darkMode}
+              toggleDarkMode={toggleDarkMode}
+            />
           </Route>
           <Route path="/PcrArticle">
             <PcrArticle />
