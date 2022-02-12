@@ -5,11 +5,11 @@ const About = () => {
     <div className="about-container">
       <div className="aboutPic">
         <div className="content-container">
-          <img
+          {/* <img
             src="https://i.imgur.com/ln9vmx4.png?2"
             alt="Greetung"
             className="greeting"
-          />
+          /> */}
           {/* <h1 className="about-me">About Me</h1>
           <div className="underline"></div> */}
           <p className="blog-intro">
@@ -17,14 +17,9 @@ const About = () => {
           </p>
           <div>
             <p className="quote">
-              Welcome to my blog! I code the website from scratch to practice
-              programming skills and share my enthusiasm of life. Topics include
-              student exchange experiences in Istanbul, hiking, and coding. Stay
-              tuned!
-            </p>
-            <p className="quote quote-small">
-              (If you see any function not working, don't doubt it. That's just
-              a bug that I'm racking my brain to fix lol)
+              I code the website from scratch to practice programming skills and
+              share my enthusiasm of life. Topics include student exchange
+              experiences in Istanbul, hiking, and coding. Stay tuned!
             </p>
           </div>
         </div>

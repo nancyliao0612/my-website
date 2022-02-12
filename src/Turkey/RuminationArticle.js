@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsDot } from "react-icons/bs";
+import { AiOutlineLike } from "react-icons/ai";
 
 const RuminationArticle = () => {
+  const [like, setLike] = useState(0);
+  function handleLikeClick() {
+    setLike((prevLike) => prevLike + 1);
+  }
   return (
     <div>
       <img
@@ -392,10 +397,14 @@ const RuminationArticle = () => {
         <br />
         <p>很慶幸也很感激自己能在踏入社會前有這樣一段旅程</p>
         <p>
-          也即將迎來人生下一個階段，就要面對現實找工作啦（抖）....finger crossed
-          for me
+          也即將迎來人生下一個階段，就要面對現實找工作啦（抖）....fingers
+          crossed for me
         </p>
         <br />
+        <div className="like-button">
+          <AiOutlineLike onClick={handleLikeClick} className="like-icon" />
+          <span>{like}</span>
+        </div>
       </div>
     </div>
   );

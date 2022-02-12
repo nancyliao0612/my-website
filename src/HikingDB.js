@@ -42,7 +42,7 @@ const HikingDB = () => {
           <br />
         </p>
         <h3>行程規劃</h3>
-        <div>
+        <div className="detail-info">
           <h5>｜Day 1（總距離：23 公里，約 9.5 小時）</h5>
           <br />
           <span>

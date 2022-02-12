@@ -5,9 +5,10 @@ import Latesthikes from "./home/Latesthikes";
 import { Link } from "react-router-dom";
 import cardData from "./cardData";
 import Card from "./Turkey/Card";
+import LandingPage from "./home/LandingPage";
 // import Footer from "./Footer";
 
-const Home = () => {
+const Home = (props) => {
   const card = cardData.map((item) => {
     return (
       <Card
@@ -22,7 +23,11 @@ const Home = () => {
 
   return (
     <>
-      <Mypic />
+      <LandingPage
+        darkMode={props.darkMode}
+        toggleDarkMode={props.toggleDarkMode}
+      />
+      {/* <Mypic /> */}
       <About />
       <section className="istanbul-section">
         <Link to="/TurkeyArticles">

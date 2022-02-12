@@ -14,11 +14,13 @@ Variables
 :root {
   /* 網站主色 */
   --clr-primary-1: #656d4a;
+  --clr-primary-1: #4a574f;
   /* --clr-primary-1: #3c5341; */
   --clr-primary-2: #e9ece3;
+  --clr-primary-2: #e4e8e6;
   /* --clr-primary-2: #f1f4f1; */
   --clr-primary-3: #d4d8c7;
-  /* --clr-primary-3: #f9fee8; */
+  --clr-primary-3: #e4e8e6;
   --clr-black-1: #404040;
   --clr-grey-1: rgb(225, 228, 211);
   --clr-grey-2: #a6a6a6;
@@ -85,12 +87,18 @@ nav {
   justify-content: space-between;
   padding: 0.2rem 0.7rem;
 }
+
+/* nav.dark {
+  background-color: #21222a;
+} */
+
 .nav-toggle {
   font-size: 1.3rem;
   color: var(--clr-primary-1);
   background: transparent;
   border-color: transparent;
   cursor: pointer;
+  padding-top: 3.5px;
 }
 .nav-toggle:hover {
   color: var(--clr-black-1);
@@ -100,6 +108,68 @@ nav {
   margin-top: 3px;
   /* border: solid 1px; */
   margin-left: -0.4rem;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+  /* border: solid 1px; */
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: var(--clr-primary-1);
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid var(--clr-primary-1);
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #f5f5f5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: var(--clr-primary-1);
+}
+
+.toggler--light {
+  color: var(--clr-primary-1);
+}
+
+nav.dark .toggler--light {
+  color: #918e9b;
+}
+
+.toggler--dark {
+  color: #d5d4d8;
+  margin-right: 15px;
+}
+
+nav.dark .toggler-dark {
+  color: #ffffff;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
 }
 
 /*
@@ -196,6 +266,50 @@ Menu
 /*
 =============== 
 End of Menu
+===============
+*/
+/*
+=============== 
+Home - LandingPage
+===============
+*/
+
+main {
+  background: var(--clr-primary-3);
+  color: var(--clr-primary-1);
+}
+
+main.dark {
+  background-color: var(--clr-primary-1);
+  color: var(--clr-primary-2);
+}
+
+.landing-page {
+  height: 100vh;
+  position: relative;
+}
+
+.landing-page img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  height: 50%;
+}
+
+.landing-page div {
+  padding-top: 120px;
+  padding-left: 30px;
+  font-size: 2.1rem;
+  letter-spacing: 0px;
+}
+.landing-page p {
+  margin-top: 5px;
+  font-size: 20px;
+}
+/*
+=============== 
+Home - end of LandingPage
 ===============
 */
 
@@ -376,12 +490,10 @@ Home - aboutMe
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: solid 1px red; */
   text-align: start;
   position: relative;
-  top: 1.5rem;
   padding: 30px;
-  height: 420px;
+  height: 320px;
   letter-spacing: 0.02rem;
 }
 
@@ -576,12 +688,12 @@ End of Home - Latest Hikes
 Home - Footer
 ===============
 */
+
 .footer-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--clr-primary-3);
   height: 120px;
   line-height: 1.6rem;
 }
@@ -671,7 +783,7 @@ br {
   color: var(--clr-primary-1);
 }
 
-div span {
+.detail-info span {
   display: block;
   margin: 0 1rem;
   margin-top: -1rem;
@@ -1028,6 +1140,21 @@ span.text-small {
   font-size: 1rem;
 }
 
+.like-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: solid 1px; */
+  font-size: 0.8em;
+  width: 50px;
+  border-radius: 10px;
+  background: var(--clr-primary-2);
+}
+.like-icon {
+  margin-right: 5px;
+  color: var(--clr-primary-1);
+}
+
 /*
 =============== 
 End of Rumination
@@ -1214,5 +1341,23 @@ End of Rumination
   div .style-3 {
     width: 49%;
     height: 270px;
+  }
+
+  .landing-page {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 70vh;
+    /* border: solid 1px red; */
+  }
+  .landing-page div {
+    margin-left: 200px;
+    margin-top: -100px;
+  }
+  .landing-page img {
+    height: 50vh;
+    transform: none;
+    margin-left: 100px;
+    margin-bottom: 40px;
   }
 }
