@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsDot } from "react-icons/bs";
 import { AiOutlineLike } from "react-icons/ai";
 
 const RuminationArticle = (props) => {
-  const [like, setLike] = useState(0);
+  const [likes, setLikes] = useState(
+    JSON.parse(localStorage.getItem("likes")) || 0
+  );
   function handleLikeClick() {
-    setLike((prevLike) => prevLike + 1);
+    setLikes((prevLikes) => prevLikes + 1);
   }
+  useEffect(() => {
+    localStorage.setItem("likes", JSON.stringify(likes));
+  }, [likes]);
   return (
     <main className={props.darkMode ? "darkContent" : "lightContent"}>
       <div>
@@ -411,7 +416,7 @@ const RuminationArticle = (props) => {
           <br />
           <div className="like-button">
             <AiOutlineLike onClick={handleLikeClick} className="like-icon" />
-            <span>{like}</span>
+            <span>{likes}</span>
           </div>
         </div>
       </div>

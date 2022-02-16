@@ -29,7 +29,7 @@ function App() {
         <Menu />
         <Router>
           <Route exact path="/">
-            <Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            <Home darkMode={darkMode} />
           </Route>
           <Route path="/hiking">
             <Hiking />
