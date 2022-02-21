@@ -1189,13 +1189,11 @@ End of Rumination
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    /* border: solid 1px; */
   }
 
   .nav-header {
     padding: 0;
     cursor: pointer;
-    /* border: solid 1px; */
   }
 
   .nav-toggle {
@@ -1207,6 +1205,8 @@ End of Rumination
     visibility: visible;
     display: flex;
     height: 3rem;
+    width: 585px;
+    left: 50%;
     /*navBar高度讓裡面的元素撐開*/
   }
 
@@ -1225,7 +1225,6 @@ End of Rumination
     width: 100%;
     transition: none;
     margin: 0 auto;
-    z-index: 999;
   }
 
   .links a {
