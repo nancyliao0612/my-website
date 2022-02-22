@@ -579,17 +579,17 @@ Home - Latest Hikes
   /* border: solid 1px; */
 }
 
+.leaf-container {
+  position: relative;
+}
+
 .dark-leaf-opacity {
   opacity: 10%;
   position: absolute;
   height: 400px;
-  top: 1400px;
+  top: 200px;
   right: 0px;
   z-index: 1;
-}
-
-.leaf-container {
-  position: relative;
 }
 
 .dark-leaf-opacity-2 {

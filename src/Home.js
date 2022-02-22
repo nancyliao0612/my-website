@@ -29,11 +29,13 @@ const Home = (props) => {
       />
       {/* <Mypic /> */}
       <About />
-      <img
-        src="https://i.imgur.com/3QL3Vc3.png?1"
-        alt="dark-leaf-bg"
-        className="dark-leaf-opacity"
-      />
+      <div className="leaf-container">
+        <img
+          src="https://i.imgur.com/3QL3Vc3.png?1"
+          alt="dark-leaf-bg"
+          className="dark-leaf-opacity"
+        />
+      </div>
       <section className="istanbul-section">
         <Link to="/TurkeyArticles">
           <img
