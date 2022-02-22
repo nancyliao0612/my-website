@@ -13,11 +13,7 @@ const HikingDB = () => {
   return (
     <section className="DB-background">
       <div>
-        <img
-          src="https://i.imgur.com/495Ri0y.png?1"
-          alt=""
-          className="map-pic"
-        />
+        <img src="https://i.imgur.com/g6VZqgN.png" alt="" className="map-pic" />
       </div>
       <div className="DB-center">
         <div className="summary-container">

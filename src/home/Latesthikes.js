@@ -9,9 +9,9 @@ const Latesthikes = () => {
     <section className="hike-section">
       <div className="title-container">
         <img
-          src="https://i.imgur.com/vfmEwFf.png?1"
+          src="https://i.imgur.com/g6VZqgN.png"
           alt="Latest Hikes"
-          className="title-label"
+          className="hiking-leaf-label"
         />
       </div>
       <div className="placeInRow-2">

@@ -29,17 +29,30 @@ const Home = (props) => {
       />
       {/* <Mypic /> */}
       <About />
+      <img
+        src="https://i.imgur.com/3QL3Vc3.png?1"
+        alt="dark-leaf-bg"
+        className="dark-leaf-opacity"
+      />
       <section className="istanbul-section">
         <Link to="/TurkeyArticles">
           <img
-            src="https://i.imgur.com/KOoHhDS.png"
+            src="https://i.imgur.com/am4NrLJ.png"
             alt="istanbul"
-            className="title-label"
+            className="istanbul-leaf-label"
           />
         </Link>
         <div className="placeInRow">{card}</div>
+
         <br />
       </section>
+      <div className="leaf-container">
+        <img
+          src="https://i.imgur.com/aK68Ie8.png?1"
+          alt="dark-leaf-bg"
+          className="dark-leaf-opacity-2"
+        />
+      </div>
       <Latesthikes />
       {/* <Footer /> */}
     </>

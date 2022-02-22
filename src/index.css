@@ -519,10 +519,9 @@ Home - aboutMe
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: start;
+  text-align: left;
   position: relative;
-  padding: 30px;
+  padding: 50px;
   height: 320px;
   letter-spacing: 0.02rem;
 }
@@ -531,7 +530,6 @@ Home - aboutMe
   color: white;
   font-size: 0.85rem;
   line-height: 1.4rem;
-  text-align: center;
   font-weight: 800px;
   /* border: solid 1px; */
 }
@@ -539,8 +537,6 @@ Home - aboutMe
 .quote {
   color: white;
   font-size: 0.85rem;
-  text-align: center;
-
   /* font-style: italic; */
 }
 .quote-small {
@@ -571,19 +567,38 @@ Home - Latest Hikes
   height: 1200px;
 }
 
-.title-label {
-  width: 12rem;
-  object-fit: cover;
-  /* border: solid 1px; */
+.istanbul-leaf-label {
+  width: 8rem;
+  margin-left: 40px;
   margin-top: 2rem;
 }
-
-.title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0.5rem 0;
+.hiking-leaf-label {
+  width: 6.5rem;
+  margin-left: 40px;
+  margin-top: 2rem;
+  /* border: solid 1px; */
 }
+
+.dark-leaf-opacity {
+  opacity: 10%;
+  position: absolute;
+  height: 400px;
+  top: 1400px;
+  right: 0px;
+  z-index: 1;
+}
+
+.leaf-container {
+  position: relative;
+}
+
+.dark-leaf-opacity-2 {
+  position: absolute;
+  opacity: 10%;
+  height: 350px;
+  top: -250px;
+}
+
 /* .underline-2 {
   width: 4rem;
   height: 0.12rem;
@@ -595,7 +610,6 @@ Home - Latest Hikes
   display: flex;
   justify-content: center;
   padding: 1rem 0;
-  /* border: solid 1px; */
   width: 100vw;
 }
 
@@ -919,12 +933,10 @@ Istanbul
 .istanbul-section {
   width: 100vw;
   height: auto;
-  background-color: white;
-  /* border: solid 1px; */
+  background-color: var(--clr-primary-2);
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .article-container-2 {
@@ -959,7 +971,7 @@ Istanbul
 .read-more {
   margin: 5px 0;
   cursor: pointer;
-  width: 7rem;
+  width: 6rem;
 }
 .tag {
   font-size: 14px;
@@ -1270,6 +1282,7 @@ End of Rumination
   .article-section {
     width: 50%;
     margin: 0 auto;
+    z-index: 999;
     /* border: solid 1px; */
   }
   .article-container-2 {

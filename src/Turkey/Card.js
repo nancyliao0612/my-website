@@ -15,7 +15,7 @@ const Card = (props) => {
         <h3 className="istanbul-title">{props.title}</h3>
         <p className="istanbul-intro">{props.discription}</p>
         <Link to={props.link}>
-          <img className="read-more" src="https://i.imgur.com/zRVuAej.jpg" />
+          <img className="read-more" src="https://i.imgur.com/ykuByb4.png" />
         </Link>
       </div>
     </div>
