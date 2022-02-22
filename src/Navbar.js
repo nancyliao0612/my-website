@@ -12,7 +12,7 @@ const Navbar = (props) => {
         <div className="nav-header">
           <a href="/">
             <img
-              src="https://i.imgur.com/aixH85L.png"
+              src="https://i.imgur.com/a3AIbE4.png?1"
               className="logo"
               alt="logo"
             />

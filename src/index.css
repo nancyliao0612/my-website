@@ -23,6 +23,7 @@ Variables
   --clr-primary-3: #d4d8c7;
   --clr-primary-3: #e4e8e6;
   --clr-primary-4: #042825;
+  --clr-primary-5: #f2a278;
   --clr-black-1: #404040;
   --clr-grey-1: rgb(225, 228, 211);
   --clr-grey-2: #a6a6a6;
@@ -105,10 +106,10 @@ nav {
   color: var(--clr-black-1);
 }
 .logo {
-  height: 40px;
+  height: 30px;
   margin-top: 3px;
   /* border: solid 1px; */
-  margin-left: -0.4rem;
+  margin-left: 0.3rem;
 }
 
 .toggler {
@@ -293,22 +294,49 @@ main.dark {
 
 .landing-page img {
   position: absolute;
+}
+
+.landing-page .nancy-pic {
   left: 50%;
-  bottom: 0;
+  bottom: 70px;
   transform: translate(-50%, 0%);
   height: 50%;
 }
 
+.landing-page .dark-leaf {
+  bottom: -15px;
+  /* border: solid 1px; */
+  height: 420px;
+  /* left: -50px; */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.landing-page .explore-leaf {
+  width: 100px;
+  top: 270px;
+  right: 50px;
+  transform: rotateZ(-30deg);
+  /* bottom: 20px; */
+}
+
 .landing-page div {
   padding-top: 120px;
-  padding-left: 30px;
+  padding-left: 50px;
   font-size: 2.1rem;
   letter-spacing: 0px;
 }
 .landing-page p {
   margin-top: 5px;
   font-size: 20px;
+  font-weight: 700;
 }
+
+.landing-page h1 {
+  font-size: 45px;
+  color: var(--clr-primary-5);
+}
+
 /*
 =============== 
 Home - end of LandingPage
@@ -421,7 +449,7 @@ Home - aboutMe
 
 .about-container {
   width: 100vw;
-  /* height: 15rem; */
+  height: 15rem;
   /* border: solid 1px red; */
   overflow: hidden;
   display: flex;
@@ -1252,10 +1280,10 @@ End of Rumination
   /* About section */
 
   .content-container {
-    border: solid 2px white;
+    /* border: solid 2px white; */
     width: 30vw;
-    justify-content: unset;
-    margin-left: -150px;
+    /* margin-left: -150px; */
+    align-items: center;
   }
 
   /*myPic seciton*/
@@ -1379,5 +1407,8 @@ End of Rumination
     transform: none;
     margin-left: 100px;
     margin-bottom: 40px;
+  }
+  .toggler--light {
+    margin-left: 10px;
   }
 }
