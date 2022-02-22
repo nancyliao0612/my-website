@@ -45,7 +45,6 @@ const Home = (props) => {
           />
         </Link>
         <div className="placeInRow">{card}</div>
-
         <br />
       </section>
       <div className="leaf-container">
