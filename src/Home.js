@@ -7,7 +7,6 @@ import cardData from "./cardData";
 import Card from "./Turkey/Card";
 import LandingPage from "./home/LandingPage";
 import HikePictres from "./home/HikePictures";
-// import Footer from "./Footer";
 
 const Home = (props) => {
   const card = cardData.map((item) => {
@@ -63,7 +62,13 @@ const Home = (props) => {
           className="life-board"
         />
       </div>
-      {/* <Footer /> */}
+      <div className="leaf-container">
+        <img
+          src="https://i.imgur.com/3QL3Vc3.png?1"
+          alt="dark-leaf-bg"
+          className="dark-leaf-opacity-3"
+        />
+      </div>
     </>
   );
 };

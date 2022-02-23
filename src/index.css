@@ -590,7 +590,7 @@ Home - Latest Hikes
   height: 400px;
   top: 200px;
   right: 0px;
-  z-index: 1;
+  z-index: 99;
 }
 
 .dark-leaf-opacity-2 {
@@ -598,6 +598,13 @@ Home - Latest Hikes
   opacity: 10%;
   height: 350px;
   top: -250px;
+}
+.dark-leaf-opacity-3 {
+  opacity: 20%;
+  position: absolute;
+  height: 400px;
+  top: -420px;
+  right: 0px;
 }
 
 /* .underline-2 {
@@ -756,7 +763,7 @@ Home - Board
 
 .life-board {
   height: 200px;
-  margin-top: 100px;
+  margin-top: 105px;
   margin-left: 5vw;
 }
 
@@ -777,16 +784,25 @@ Home - Footer
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 120px;
+  height: 100px;
   line-height: 1.6rem;
-  background: var(--clr-primary-3);
+  background: var(--clr-primary-1);
 }
-.footer-icons img {
-  width: 1rem;
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon {
+  color: var(--clr-primary-3);
   margin: 0 0.8rem;
+  width: 1rem;
 }
+
 .footer-copyright {
-  color: var(--clr-primary-1);
+  color: var(--clr-primary-3);
 }
 
 /*
@@ -1547,7 +1563,7 @@ End of Rumination
   }
   .life-board {
     height: 250px;
-    margin-top: 50px;
+    margin-top: 55px;
     margin-left: 10vw;
   }
 }
