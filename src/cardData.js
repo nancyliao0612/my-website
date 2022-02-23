@@ -15,7 +15,7 @@ export default [
   },
   {
     id: 3,
-    coverImg: "https://i.imgur.com/pgoZxOd.jpg",
+    coverImg: "https://i.imgur.com/IRPwGMU.jpg",
     title: "【邂逅】在伊斯坦堡的怦然心動 – 與土耳其人初次的單獨會面",
     link: "/IstanbulFirst",
     discription:

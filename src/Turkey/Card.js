@@ -12,11 +12,13 @@ const Card = (props) => {
             className="istanbul-pic"
           />
         </Link>
-        <h3 className="istanbul-title">{props.title}</h3>
-        <p className="istanbul-intro">{props.discription}</p>
-        <Link to={props.link}>
-          <img className="read-more" src="https://i.imgur.com/ykuByb4.png" />
-        </Link>
+        <div className="istanbul-article-containter">
+          <h3 className="istanbul-title">{props.title}</h3>
+          <p className="istanbul-intro">{props.discription}</p>
+          <Link to={props.link}>
+            <img className="read-more" src="https://i.imgur.com/ykuByb4.png" />
+          </Link>
+        </div>
       </div>
     </div>
   );

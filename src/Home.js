@@ -1,11 +1,12 @@
 import React from "react";
 import Mypic from "./home/Mypic";
 import About from "./home/About";
-import Latesthikes from "./home/Latesthikes";
+// import Latesthikes from "./home/Latesthikes";
 import { Link } from "react-router-dom";
 import cardData from "./cardData";
 import Card from "./Turkey/Card";
 import LandingPage from "./home/LandingPage";
+import HikePictres from "./home/HikePictures";
 // import Footer from "./Footer";
 
 const Home = (props) => {
@@ -54,7 +55,7 @@ const Home = (props) => {
           className="dark-leaf-opacity-2"
         />
       </div>
-      <Latesthikes />
+      <HikePictres />
       {/* <Footer /> */}
     </>
   );
