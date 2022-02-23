@@ -600,11 +600,12 @@ Home - Latest Hikes
   top: -250px;
 }
 .dark-leaf-opacity-3 {
-  opacity: 20%;
+  /* opacity: 20%; */
   position: absolute;
   height: 400px;
-  top: -420px;
+  top: -400px;
   right: 0px;
+  z-index: 99;
 }
 
 /* .underline-2 {
