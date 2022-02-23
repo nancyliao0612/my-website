@@ -584,27 +584,26 @@ Home - Latest Hikes
 }
 
 .leaf-container img {
-  opacity: 10%;
+  -webkit-filter:opacity(.2);
+  z-index: 99;
+  position: absolute;
 }
 
 .dark-leaf-opacity {
-  position: absolute;
   height: 400px;
   top: 200px;
   right: 0px;
-  z-index: 99;
 }
 
 .dark-leaf-opacity-2 {
-  position: absolute;
   height: 350px;
   top: -250px;
 }
 .dark-leaf-opacity-3 {
-  position: absolute;
   height: 400px;
   top: -400px;
   right: 0px;
+  
 }
 
 /* .underline-2 {
@@ -623,7 +622,6 @@ Home - Latest Hikes
 
 .article-container {
   width: 75vw;
-  /* border: solid 1px; */
   height: 320px;
   background: white;
   border-radius: 5px;
@@ -995,17 +993,30 @@ Istanbul
   flex-direction: column;
 }
 
+section.dark {
+  background-color: var(--clr-primary-1);
+}
+
 .article-container-2 {
   width: 75vw;
   height: auto;
-  /* border: solid 1px; */
   margin: 0 auto;
 }
 
-.istanbul-title {
+.content-for-darkMode{
+  color: var(--clr-primary-3)
+}
+
+.istanbul-article-containter {
   color: var(--clr-black-1);
+}
+
+.dark-bg {
+  background-color: var(--clr-primary-1)
+}
+
+.istanbul-title {
   width: 75vw;
-  /* border: solid 1px; */
   padding: 5px;
 }
 
@@ -1018,7 +1029,6 @@ Istanbul
 }
 .istanbul-intro {
   width: 75vw;
-  color: var(--clr-black-1);
   font-size: 0.9rem;
   line-height: 1.4rem;
   /* border: solid 1px; */
@@ -1459,7 +1469,6 @@ End of Rumination
     /* margin-top: 200px; */
   }
   .hike-section .article-section {
-    border: solid 1px;
     margin: 25px 40px;
     height: 400px;
   }

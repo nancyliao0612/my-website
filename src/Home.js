@@ -17,6 +17,7 @@ const Home = (props) => {
         title={item.title}
         link={item.link}
         discription={item.discription}
+        darkMode={props.darkMode}
       />
     );
   });
@@ -25,11 +26,11 @@ const Home = (props) => {
     <>
       <LandingPage
         darkMode={props.darkMode}
-        toggleDarkMode={props.toggleDarkMode}
+        // toggleDarkMode={props.toggleDarkMode}
       />
       {/* <Mypic /> */}
       <About />
-      <section className="istanbul-section">
+      <section className={props.darkMode ? "dark" : "istanbul-section"}>
         <div className="leaf-container">
           <img
             src="https://i.imgur.com/3QL3Vc3.png?1"
@@ -54,8 +55,8 @@ const Home = (props) => {
           className="dark-leaf-opacity-2"
         />
       </div>
-      <HikePictres />
-      <div className="board-section">
+      <HikePictres darkMode={props.darkMode}/>
+      <div className={props.darkMode ? "dark-bg" : "board-section"}>
         <img
           src="https://i.imgur.com/Fws60K3.png"
           alt="life-board"

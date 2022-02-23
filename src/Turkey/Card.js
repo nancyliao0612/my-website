@@ -12,7 +12,7 @@ const Card = (props) => {
             className="istanbul-pic"
           />
         </Link>
-        <div className="istanbul-article-containter">
+        <div className={props.darkMode ? "content-for-darkMode" : "istanbul-article-containter"}>
           <h3 className="istanbul-title">{props.title}</h3>
           <p className="istanbul-intro">{props.discription}</p>
           <Link to={props.link}>

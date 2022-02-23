@@ -1,13 +1,13 @@
 import hikePicData from "./hikePicData";
 import HikePics from "./HikePics";
 
-function HikePictres() {
+function HikePictres(props) {
   const hikePics = hikePicData.map((hikePic) => {
     return <HikePics {...hikePic} key={hikePic.id} />;
   });
   return (
     <>
-      <div className="title-container">
+      <div className={props.darkMode ? "dark-bg" : "title-container"}>
         <img
           src="https://i.imgur.com/g6VZqgN.png"
           alt="Latest Hikes"
