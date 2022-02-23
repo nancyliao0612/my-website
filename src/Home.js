@@ -56,6 +56,13 @@ const Home = (props) => {
         />
       </div>
       <HikePictres />
+      <div className="board-section">
+        <img
+          src="https://i.imgur.com/Fws60K3.png"
+          alt="life-board"
+          className="life-board"
+        />
+      </div>
       {/* <Footer /> */}
     </>
   );
