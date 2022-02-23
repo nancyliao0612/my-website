@@ -577,15 +577,17 @@ Home - Latest Hikes
   width: 6.5rem;
   margin-left: 40px;
   margin-top: 2rem;
-  /* border: solid 1px; */
 }
 
 .leaf-container {
   position: relative;
 }
 
-.dark-leaf-opacity {
+.leaf-container img {
   opacity: 10%;
+}
+
+.dark-leaf-opacity {
   position: absolute;
   height: 400px;
   top: 200px;
@@ -595,17 +597,14 @@ Home - Latest Hikes
 
 .dark-leaf-opacity-2 {
   position: absolute;
-  opacity: 10%;
   height: 350px;
   top: -250px;
 }
 .dark-leaf-opacity-3 {
-  opacity: 60%;
   position: absolute;
   height: 400px;
   top: -400px;
   right: 0px;
-  z-index: 99;
 }
 
 /* .underline-2 {
