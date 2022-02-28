@@ -33,7 +33,11 @@ const Home = (props) => {
       <section className={props.darkMode ? "dark" : "istanbul-section"}>
         <div className="leaf-container">
           <img
-            src="https://i.imgur.com/3QL3Vc3.png?1"
+            src={
+              props.darkMode
+                ? "https://i.imgur.com/zSonPg5.png"
+                : "https://i.imgur.com/qOG7EOf.png"
+            }
             alt="dark-leaf-bg"
             className="dark-leaf-opacity"
           />
@@ -47,28 +51,36 @@ const Home = (props) => {
         </Link>
         <div className="placeInRow">{card}</div>
         <br />
+        <div className="leaf-container">
+          <img
+            src={
+              props.darkMode
+                ? "https://i.imgur.com/zSonPg5.png"
+                : "https://i.imgur.com/qOG7EOf.png"
+            }
+            alt="dark-leaf-bg"
+            className="dark-leaf-opacity-2"
+          />
+        </div>
       </section>
-      <div className="leaf-container">
-        <img
-          src="https://i.imgur.com/aK68Ie8.png?1"
-          alt="dark-leaf-bg"
-          className="dark-leaf-opacity-2"
-        />
-      </div>
-      <HikePictres darkMode={props.darkMode}/>
+      <HikePictres darkMode={props.darkMode} />
       <div className={props.darkMode ? "dark-bg" : "board-section"}>
         <img
           src="https://i.imgur.com/Fws60K3.png"
           alt="life-board"
           className="life-board"
         />
-      </div>
-      <div className="leaf-container">
-        <img
-          src="https://i.imgur.com/3QL3Vc3.png?1"
-          alt="dark-leaf-bg"
-          className="dark-leaf-opacity-3"
-        />
+        <div className="leaf-container">
+          <img
+            src={
+              props.darkMode
+                ? "https://i.imgur.com/zSonPg5.png"
+                : "https://i.imgur.com/qOG7EOf.png"
+            }
+            alt="dark-leaf-bg"
+            className="dark-leaf-opacity-3"
+          />
+        </div>
       </div>
     </>
   );

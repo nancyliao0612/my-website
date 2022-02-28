@@ -6,7 +6,11 @@ const LandingPage = (props) => {
       <section className="landing-page">
         <div className="blog-intro-container">
           <img
-            src="https://i.imgur.com/qOG7EOf.png"
+            src={
+              props.darkMode
+                ? "https://i.imgur.com/zSonPg5.png"
+                : "https://i.imgur.com/qOG7EOf.png"
+            }
             alt=""
             className="dark-leaf-special"
           />

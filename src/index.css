@@ -54,8 +54,6 @@ body {
   font-family: "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* background: var(--clr-primary-2); */
 }
 
 ul {
@@ -88,11 +86,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.2rem 0.7rem;
+  z-index: 999;
 }
-
-/* nav.dark {
-  background-color: #21222a;
-} */
 
 .nav-toggle {
   font-size: 1.3rem;
@@ -591,18 +586,19 @@ Home - Latest Hikes
 
 .dark-leaf-opacity {
   height: 400px;
-  top: 200px;
-  right: 0px;
+  top: -50px;
+  right: -200px;
 }
 
 .dark-leaf-opacity-2 {
   height: 350px;
-  top: -250px;
+  top: -230px;
+  right: 100px;
 }
 .dark-leaf-opacity-3 {
   height: 400px;
-  top: -400px;
-  right: 0px;
+  top: -420px;
+  right: -200px;
 }
 
 /* .underline-2 {
@@ -755,6 +751,7 @@ Home - Board
 .board-section {
   background-color: var(--clr-primary-3);
   height: 300px;
+  overflow: hidden;
   /* border: solid 1px; */
 }
 
@@ -990,10 +987,14 @@ Istanbul
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-bottom: 100px;
+  overflow: hidden;
 }
 
 section.dark {
   background-color: var(--clr-primary-1);
+  overflow: hidden;
+  padding-bottom: 100px;
 }
 
 .article-container-2 {
@@ -1012,6 +1013,7 @@ section.dark {
 
 .dark-bg {
   background-color: var(--clr-primary-1);
+  overflow: hidden;
 }
 
 .istanbul-title {
@@ -1250,7 +1252,7 @@ Rumination
 */
 
 .lightContent {
-  background-color: white;
+  background-color: var(--clr-primary-3);
   color: var(--clr-black-1);
 }
 
@@ -1416,8 +1418,14 @@ End of Rumination
   }
   .istanbul-section {
     height: auto;
-    /* flex-direction: row; */
+    padding-bottom: 100px;
+    background-color: var(--clr-primary-3);
     /* border: solid 1px; */
+  }
+
+  section.dark {
+    padding-bottom: 100px;
+    overflow: hidden;
   }
 
   .article-section {
@@ -1499,12 +1507,11 @@ End of Rumination
     display: flex;
     max-width: var(--max-width);
     margin: 0 auto;
-    /* justify-content: center; */
     align-items: center;
     height: 100vh;
     width: 100%;
-    /* border: solid 1px red; */
     z-index: 0;
+    overflow: visible;
   }
   .landing-page h1 {
     display: inline-block;
@@ -1551,8 +1558,16 @@ End of Rumination
   }
 
   .dark-leaf-opacity-2 {
-    width: 400px;
+    width: 600px;
     height: auto;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+
+  .dark-leaf-opacity-3 {
+    height: 400px;
+    top: -400px;
+    right: -100px;
   }
 
   .istanbul-leaf-label {
