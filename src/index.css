@@ -1200,7 +1200,10 @@ Turkey
 
 .title-label {
   width: 250px;
-  height: auto;
+  height: 45px;
+  /* height: auto; */
+  /* border: solid 1px; */
+  object-fit: cover;
 }
 
 .istanbul-tab {
@@ -1364,11 +1367,10 @@ End of Rumination
     font-size: 0.9rem;
     padding: 0.7rem 0.8rem;
     transition: none;
-    /* border: solid 1px; */
   }
 
   .links a:hover {
-    color: var(--clr-black-1);
+    color: var(--clr-primary-5);
     padding: 0.7rem 0.8rem;
   }
 
@@ -1622,5 +1624,9 @@ End of Rumination
   }
   .istanbul-tab-option:hover {
     border-bottom: solid 2px #f2a278;
+  }
+  .title-label {
+    width: 300px;
+    height: auto;
   }
 }
