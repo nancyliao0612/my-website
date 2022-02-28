@@ -584,7 +584,7 @@ Home - Latest Hikes
 }
 
 .leaf-container img {
-  -webkit-filter:opacity(.2);
+  -webkit-filter: opacity(0.1);
   z-index: 99;
   position: absolute;
 }
@@ -603,7 +603,6 @@ Home - Latest Hikes
   height: 400px;
   top: -400px;
   right: 0px;
-  
 }
 
 /* .underline-2 {
@@ -1003,8 +1002,8 @@ section.dark {
   margin: 0 auto;
 }
 
-.content-for-darkMode{
-  color: var(--clr-primary-3)
+.content-for-darkMode {
+  color: var(--clr-primary-3);
 }
 
 .istanbul-article-containter {
@@ -1012,7 +1011,7 @@ section.dark {
 }
 
 .dark-bg {
-  background-color: var(--clr-primary-1)
+  background-color: var(--clr-primary-1);
 }
 
 .istanbul-title {
@@ -1397,6 +1396,7 @@ End of Rumination
     object-fit: cover;
     background-position: center;
     height: 500px;
+    width: 100%;
     /* border: solid 1px; */
     margin-bottom: 25px;
   }
@@ -1522,8 +1522,8 @@ End of Rumination
   }
 
   .dark-leaf-special {
+    -webkit-filter: opacity(0.1);
     visibility: visible;
-    opacity: 10%;
     top: -200px;
     left: -300px;
     width: 700px;
