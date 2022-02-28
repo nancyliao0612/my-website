@@ -22,6 +22,7 @@ function App() {
   function toggleDarkMode() {
     setDarkMode((prevMode) => !prevMode);
   }
+
   return (
     <React.StrictMode>
       <AppProvider>
