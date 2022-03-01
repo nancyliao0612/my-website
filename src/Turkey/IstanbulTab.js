@@ -1,10 +1,14 @@
-function IstanbulTab({ tabs, filterCards }) {
+function IstanbulTab({ tabs, filterCards, darkMode }) {
   return (
-    <div className="istanbul-tab">
+    <div
+      className={darkMode ? "dark-istanbul-tab istanbul-tab" : "istanbul-tab"}
+    >
       {tabs.map((tab, id) => {
         return (
           <p
-            className="istanbul-tab-option"
+            className={
+              darkMode ? "dark-istanbul-tab-option" : "istanbul-tab-option"
+            }
             key={id}
             onClick={() => filterCards(tab)}
           >

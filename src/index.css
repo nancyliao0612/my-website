@@ -790,13 +790,14 @@ Home - Footer
 }
 
 .footer-icon {
-  color: var(--clr-primary-3);
   margin: 0 0.8rem;
+  color: var(--clr-primary-3);
   width: 1rem;
 }
 
 .footer-copyright {
   color: var(--clr-primary-3);
+  font-weight: 400;
 }
 
 /*
@@ -1059,7 +1060,7 @@ Istanbul EPS 01
 */
 
 .article-pic {
-  margin-top: 55px;
+  margin-top: 40px;
   border-radius: 0;
   /* border: solid 1px; */
 }
@@ -1223,6 +1224,28 @@ Turkey
   margin: 0 0.8rem;
   cursor: pointer;
   border-bottom: solid 1px var(--clr-primary-3);
+}
+
+.dark-istanbul-section {
+  background-color: var(--clr-primary-1);
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.dark-istanbul-tab {
+  background-color: var(--clr-primary-3);
+}
+
+.dark-istanbul-tab-option {
+  margin: 0 0.8rem;
+  cursor: pointer;
+  border-bottom: solid 1px var(--clr-primary-1);
+  color: var(--clr-primary-1);
 }
 
 /*
@@ -1648,16 +1671,27 @@ End of Coding
     margin-left: 10vw;
   }
   /* istanbul section */
-  .istanbul-tab-option {
+  .istanbul-tab-option,
+  .dark-istanbul-tab-option {
     margin: 0 2rem;
     padding: 0 0.5rem;
     border-bottom: none;
   }
-  .istanbul-tab-option:hover {
+  .istanbul-tab-option:hover,
+  .dark-istanbul-tab-option:hover {
     border-bottom: solid 2px #f2a278;
   }
   .title-label {
     width: 300px;
     height: auto;
+  }
+
+  .footer-icon {
+    margin: 0 1.5rem;
+    width: 1rem;
+  }
+  .footer-copyright {
+    font-size: 0.8rem;
+    margin: 10px 0;
   }
 }

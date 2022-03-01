@@ -43,16 +43,13 @@ function App() {
             <HikingDB />
           </Route>
           <Route path="/TurkeyArticles">
-            <Turkey />
+            <Turkey darkMode={darkMode} />
           </Route>
           <Route path="/FoodcostArticle">
             <FoodcostArticle />
           </Route>
           <Route path="/RuminationArticle">
-            <RuminationArticle
-              darkMode={darkMode}
-              toggleDarkMode={toggleDarkMode}
-            />
+            <RuminationArticle darkMode={darkMode} />
           </Route>
           <Route path="/PcrArticle">
             <PcrArticle />
@@ -61,7 +58,7 @@ function App() {
             <PamukkaleArticle />
           </Route>
           <Route path="/IstanbulFirst">
-            <IstanbulFirst />
+            <IstanbulFirst darkMode={darkMode} />
           </Route>
         </Router>
         <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />

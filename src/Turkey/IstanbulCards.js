@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const IstanbulCard = ({ cardData }) => {
+const IstanbulCard = ({ cardData, darkMode }) => {
   return (
     <>
       {cardData.map((card) => {
@@ -16,7 +16,7 @@ const IstanbulCard = ({ cardData }) => {
               </Link>
               <div
                 className={
-                  card.darkMode
+                  darkMode
                     ? "content-for-darkMode"
                     : "istanbul-article-containter"
                 }

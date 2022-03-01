@@ -6,7 +6,7 @@ import IstanbulTab from "./IstanbulTab";
 
 const allTabs = ["all", ...new Set(cardData.map((card) => card.tab))];
 
-const Turkey = () => {
+const Turkey = (props) => {
   const [cards, setCards] = useState(cardData);
   const [tabs, setTabs] = useState(allTabs);
 
@@ -21,7 +21,11 @@ const Turkey = () => {
 
   return (
     <>
-      <section className="istanbul-section">
+      <section
+        className={
+          props.darkMode ? "dark-istanbul-section" : "istanbul-section"
+        }
+      >
         <div className="istanbul-huge-container">
           <img
             src="https://i.imgur.com/XACCl3B.png"
@@ -29,9 +33,13 @@ const Turkey = () => {
             className="title-label"
           />
         </div>
-        <IstanbulTab tabs={tabs} filterCards={filterCards} />
+        <IstanbulTab
+          tabs={tabs}
+          filterCards={filterCards}
+          darkMode={props.darkMode}
+        />
         <div className="placeInRow">
-          <IstanbulCard cardData={cards} />
+          <IstanbulCard cardData={cards} darkMode={props.darkMode} />
         </div>
         <br />
         <br />
