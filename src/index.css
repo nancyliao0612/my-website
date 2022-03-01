@@ -980,7 +980,8 @@ Istanbul
 ===============
 */
 
-.istanbul-section {
+.istanbul-section,
+.coding-section {
   width: 100vw;
   height: auto;
   background-color: var(--clr-primary-2);
@@ -1190,7 +1191,8 @@ Turkey
 ===============
 */
 
-.istanbul-huge-container {
+.istanbul-huge-container,
+.coding-huge-container {
   /* border: solid 1px; */
   display: flex;
   justify-content: center;
@@ -1220,6 +1222,7 @@ Turkey
 .istanbul-tab-option {
   margin: 0 0.8rem;
   cursor: pointer;
+  border-bottom: solid 1px var(--clr-primary-3);
 }
 
 /*
@@ -1312,6 +1315,32 @@ span.text-small {
 /*
 =============== 
 End of Rumination
+===============
+*/
+
+/*
+=============== 
+Coding
+===============
+*/
+
+.coding-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.code-project {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+/*
+=============== 
+End of Coding
 ===============
 */
 
@@ -1442,7 +1471,8 @@ End of Rumination
   .secondCol {
     width: initial;
   }
-  .istanbul-section {
+  .istanbul-section,
+  .coding-section {
     height: auto;
     padding-bottom: 100px;
     background-color: var(--clr-primary-3);
@@ -1621,6 +1651,7 @@ End of Rumination
   .istanbul-tab-option {
     margin: 0 2rem;
     padding: 0 0.5rem;
+    border-bottom: none;
   }
   .istanbul-tab-option:hover {
     border-bottom: solid 2px #f2a278;

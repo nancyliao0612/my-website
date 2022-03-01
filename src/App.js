@@ -14,6 +14,7 @@ import FoodcostArticle from "./Turkey/FoodcostArticle";
 import IstanbulFirst from "./Turkey/IstanbulFirst";
 import PcrArticle from "./Turkey/PcrArticle";
 import RuminationArticle from "./Turkey/RuminationArticle";
+import Coding from "./coding/Coding";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/hiking">
             <Hiking />
+          </Route>
+          <Route path="/coding">
+            <Coding />
           </Route>
           <Route path="/HikingDB">
             <HikingDB />

@@ -13,7 +13,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/nancyliao0612/">
           <BsInstagram className="footer-icon" />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/nancy-liao-a6855b13b/">
           <BsLinkedin className="footer-icon" />
         </a>
       </div>
