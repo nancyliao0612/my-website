@@ -1430,6 +1430,7 @@ End of Coding
     width: 100%;
     display: flex;
     padding: 15px;
+    transition: 0.1s ease-in-out;
   }
 
   .article-container-2:hover {
