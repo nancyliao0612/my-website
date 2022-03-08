@@ -7,6 +7,7 @@ import cardData from "./cardData";
 import Card from "./Turkey/Card";
 import LandingPage from "./home/LandingPage";
 import HikePictres from "./home/HikePictures";
+import ScrollButton from "./ScrollButton";
 
 const Home = (props) => {
   const card = cardData.map((item) => {
@@ -29,6 +30,7 @@ const Home = (props) => {
         // toggleDarkMode={props.toggleDarkMode}
       />
       {/* <Mypic /> */}
+      <ScrollButton />
       <About />
       <section className={props.darkMode ? "dark" : "istanbul-section"}>
         <div className="leaf-container">

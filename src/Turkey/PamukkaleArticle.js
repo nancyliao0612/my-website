@@ -1,10 +1,12 @@
 import React from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsDot } from "react-icons/bs";
+import ScrollButton from "../ScrollButton";
 
 const PamukkaleArticle = () => {
   return (
     <div>
+      <ScrollButton />
       <img
         src="https://i.imgur.com/i17Ordm.jpg"
         alt="pamukkale"

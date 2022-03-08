@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsDot } from "react-icons/bs";
 import { AiOutlineLike } from "react-icons/ai";
+import ScrollButton from "../ScrollButton";
 
 const RuminationArticle = (props) => {
   const [likes, setLikes] = useState(
@@ -15,6 +16,7 @@ const RuminationArticle = (props) => {
   }, [likes]);
   return (
     <main className={props.darkMode ? "darkContent" : "lightContent"}>
+      <ScrollButton />
       <div>
         <img
           src="https://i.imgur.com/OAEhsFy.jpg"

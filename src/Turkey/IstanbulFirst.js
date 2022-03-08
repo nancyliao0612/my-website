@@ -1,10 +1,12 @@
 import React from "react";
 import { BsDot } from "react-icons/bs";
 import { IoTimeOutline } from "react-icons/io5";
+import ScrollButton from "../ScrollButton";
 
 const IstanbulFirst = (props) => {
   return (
     <main className={props.darkMode ? "darkContent" : "lightContent"}>
+      <ScrollButton />
       <div>
         <img
           src="https://i.imgur.com/2mePCQe.jpg"

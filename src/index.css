@@ -13,14 +13,8 @@ Variables
 
 :root {
   /* 網站主色 */
-  --clr-primary-1: #656d4a;
   --clr-primary-1: #4a574f;
-  /* --clr-primary-1: #042825; */
-  /* --clr-primary-1: #3c5341; */
-  --clr-primary-2: #e9ece3;
   --clr-primary-2: #e4e8e6;
-  /* --clr-primary-2: #f1f4f1; */
-  --clr-primary-3: #d4d8c7;
   --clr-primary-3: #e4e8e6;
   --clr-primary-4: #042825;
   --clr-primary-5: #f2a278;
@@ -66,6 +60,19 @@ a {
 
 h3 {
   padding: 1rem 0;
+}
+
+.scroll-button {
+  position: fixed;
+  bottom: 40px;
+  left: 90%;
+  z-index: 999;
+  width: 30px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.521);
+  font-size: 0.8rem;
+  color: #4a574f83;
+  cursor: pointer;
 }
 
 /*
