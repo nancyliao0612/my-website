@@ -8,7 +8,7 @@ export default [
   {
     id: 2,
     tab: "React",
-    link: "https://meme-generator-practice.netlify.app/",
+    link: "https://speed-typingame.netlify.app/",
     imageLink: "https://i.imgur.com/KoEOvTl.png",
   },
   {

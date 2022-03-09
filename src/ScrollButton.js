@@ -2,7 +2,7 @@ import { BsArrowUp } from "react-icons/bs";
 
 const ScrollButton = () => {
   function scrollToTop() {
-    window.scrollTo({
+    window.scroll({
       top: 0,
       behavior: "smooth",
     });
