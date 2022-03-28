@@ -2,8 +2,11 @@ import React from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsDot } from "react-icons/bs";
 import ScrollButton from "../ScrollButton";
+import { AiOutlineLike } from "react-icons/ai";
+import useLikeButton from "../useLikeButton";
 
 const PamukkaleArticle = () => {
+  const { likes, handleLikeClick } = useLikeButton("PamukkaleArticle");
   return (
     <div>
       <ScrollButton />
@@ -471,6 +474,10 @@ const PamukkaleArticle = () => {
               </a>
             </li>
           </ul>
+        </div>
+        <div className="like-button">
+          <AiOutlineLike onClick={handleLikeClick} className="like-icon" />
+          <span>{likes}</span>
         </div>
       </div>
       <br />

@@ -19,7 +19,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false);
-
   function toggleDarkMode() {
     setDarkMode((prevMode) => !prevMode);
   }
@@ -44,9 +43,6 @@ function App() {
           </Route>
           <Route path="/TurkeyArticles">
             <Turkey darkMode={darkMode} />
-          </Route>
-          <Route path="/FoodcostArticle">
-            <FoodcostArticle />
           </Route>
           <Route path="/RuminationArticle">
             <RuminationArticle darkMode={darkMode} />

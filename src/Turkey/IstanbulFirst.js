@@ -1,9 +1,13 @@
 import React from "react";
 import { BsDot } from "react-icons/bs";
 import { IoTimeOutline } from "react-icons/io5";
+import { AiOutlineLike } from "react-icons/ai";
 import ScrollButton from "../ScrollButton";
+import useLikeButton from "../useLikeButton";
 
 const IstanbulFirst = (props) => {
+  const { likes, handleLikeClick } = useLikeButton("IstanbulFirst");
+
   return (
     <main className={props.darkMode ? "darkContent" : "lightContent"}>
       <ScrollButton />
@@ -102,7 +106,11 @@ const IstanbulFirst = (props) => {
           </p>
           <br />
           <br />
-          <p className="tag">tags：感情、約會、心情</p>
+          {/* <p className="tag">tags：感情、約會、心情</p> */}
+          <div className="like-button">
+            <AiOutlineLike onClick={handleLikeClick} className="like-icon" />
+            <span>{likes}</span>
+          </div>
         </div>
       </div>
     </main>

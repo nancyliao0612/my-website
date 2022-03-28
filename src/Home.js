@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Mypic from "./home/Mypic";
 import About from "./home/About";
 // import Latesthikes from "./home/Latesthikes";
@@ -8,8 +8,14 @@ import Card from "./Turkey/Card";
 import LandingPage from "./home/LandingPage";
 import HikePictres from "./home/HikePictures";
 import ScrollButton from "./ScrollButton";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = (props) => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   const card = cardData.map((item) => {
     return (
       <Card
@@ -25,13 +31,10 @@ const Home = (props) => {
 
   return (
     <>
-      <LandingPage
-        darkMode={props.darkMode}
-        // toggleDarkMode={props.toggleDarkMode}
-      />
+      <LandingPage darkMode={props.darkMode} />
       {/* <Mypic /> */}
       <ScrollButton />
-      <About />
+      {/* <About /> */}
       <section className={props.darkMode ? "dark" : "istanbul-section"}>
         <div className="leaf-container">
           <img
@@ -49,9 +52,12 @@ const Home = (props) => {
             src="https://i.imgur.com/am4NrLJ.png"
             alt="istanbul"
             className="istanbul-leaf-label"
+            data-aos="fade-right"
           />
         </Link>
-        <div className="placeInRow">{card}</div>
+        <div className="placeInRow" data-aos="fade-up">
+          {card}
+        </div>
         <br />
         <div className="leaf-container">
           <img

@@ -1,19 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsDot } from "react-icons/bs";
 import { AiOutlineLike } from "react-icons/ai";
 import ScrollButton from "../ScrollButton";
+import useLikeButton from "../useLikeButton";
 
 const RuminationArticle = (props) => {
-  const [likes, setLikes] = useState(
-    JSON.parse(localStorage.getItem("likes")) || 0
-  );
-  function handleLikeClick() {
-    setLikes((prevLikes) => prevLikes + 1);
-  }
-  useEffect(() => {
-    localStorage.setItem("likes", JSON.stringify(likes));
-  }, [likes]);
+  const { likes, handleLikeClick } = useLikeButton("RuminationArticle");
+
   return (
     <main className={props.darkMode ? "darkContent" : "lightContent"}>
       <ScrollButton />

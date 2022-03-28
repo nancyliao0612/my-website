@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const LandingPage = (props) => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <main className={props.darkMode ? "dark" : ""}>
+      <img
+        src={
+          props.darkMode
+            ? "https://i.imgur.com/zSonPg5.png"
+            : "https://i.imgur.com/qOG7EOf.png"
+        }
+        alt=""
+        className="dark-leaf-special"
+      />
       <section className="landing-page">
-        <div className="blog-intro-container">
-          <img
-            src={
-              props.darkMode
-                ? "https://i.imgur.com/zSonPg5.png"
-                : "https://i.imgur.com/qOG7EOf.png"
-            }
-            alt=""
-            className="dark-leaf-special"
-          />
+        <div className="blog-intro-container" data-aos="fade-left">
           <h1>Hey There,</h1>
           <h1>I'm Nancy</h1>
           <p>Welcome to my blog! </p>
@@ -32,6 +39,7 @@ const LandingPage = (props) => {
           src="https://i.imgur.com/3ng32c0.png?1"
           alt="nancy-leaf"
           className="nancy-pic"
+          data-aos="fade-right"
         />
       </section>
     </main>

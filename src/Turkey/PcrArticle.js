@@ -1,8 +1,11 @@
 import React from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsDot } from "react-icons/bs";
+import useLikeButton from "../useLikeButton";
+import { AiOutlineLike } from "react-icons/ai";
 
 const PcrArticle = () => {
+  const { likes, handleLikeClick } = useLikeButton("PcrArticle");
   return (
     <div>
       <img
@@ -262,6 +265,10 @@ const PcrArticle = () => {
         <p>以上，希望對要在土耳其做 PCR 檢測或是等待 PCR 結果的你有幫助！</p>
         <p>祝平安喜樂！</p>
         <br />
+        <div className="like-button">
+          <AiOutlineLike onClick={handleLikeClick} className="like-icon" />
+          <span>{likes}</span>
+        </div>
       </div>
     </div>
   );
