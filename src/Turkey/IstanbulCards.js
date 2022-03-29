@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
-const IstanbulCard = ({ cardData, darkMode }) => {
+const IstanbulCard = ({ cardData }) => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <>
       {cardData.map((card) => {
@@ -16,9 +20,7 @@ const IstanbulCard = ({ cardData, darkMode }) => {
               </Link>
               <div
                 className={
-                  darkMode
-                    ? "content-for-darkMode"
-                    : "istanbul-article-containter"
+                  theme ? "content-for-darkMode" : "istanbul-article-containter"
                 }
               >
                 <h3 className="istanbul-title">{card.title}</h3>

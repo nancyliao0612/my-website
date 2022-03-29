@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import Mypic from "./home/Mypic";
 import About from "./home/About";
 // import Latesthikes from "./home/Latesthikes";
@@ -10,8 +10,11 @@ import HikePictres from "./home/HikePictures";
 import ScrollButton from "./ScrollButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ThemeContext } from "./context/ThemeContext";
 
-const Home = (props) => {
+const Home = () => {
+  const { theme } = useContext(ThemeContext);
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -24,22 +27,21 @@ const Home = (props) => {
         title={item.title}
         link={item.link}
         discription={item.discription}
-        darkMode={props.darkMode}
       />
     );
   });
 
   return (
     <>
-      <LandingPage darkMode={props.darkMode} />
-      {/* <Mypic /> */}
+      <LandingPage />
       <ScrollButton />
       {/* <About /> */}
-      <section className={props.darkMode ? "dark" : "istanbul-section"}>
+      {/* <Mypic /> */}
+      <section className={theme ? "dark" : "istanbul-section"}>
         <div className="leaf-container">
           <img
             src={
-              props.darkMode
+              theme
                 ? "https://i.imgur.com/zSonPg5.png"
                 : "https://i.imgur.com/qOG7EOf.png"
             }
@@ -62,7 +64,7 @@ const Home = (props) => {
         <div className="leaf-container">
           <img
             src={
-              props.darkMode
+              theme
                 ? "https://i.imgur.com/zSonPg5.png"
                 : "https://i.imgur.com/qOG7EOf.png"
             }
@@ -71,8 +73,8 @@ const Home = (props) => {
           />
         </div>
       </section>
-      <HikePictres darkMode={props.darkMode} />
-      <div className={props.darkMode ? "dark-bg" : "board-section"}>
+      <HikePictres />
+      <div className={theme ? "dark-bg" : "board-section"}>
         <img
           src="https://i.imgur.com/Fws60K3.png"
           alt="life-board"
@@ -81,7 +83,7 @@ const Home = (props) => {
         <div className="leaf-container">
           <img
             src={
-              props.darkMode
+              theme
                 ? "https://i.imgur.com/zSonPg5.png"
                 : "https://i.imgur.com/qOG7EOf.png"
             }

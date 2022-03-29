@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { links } from "./data";
+import React, { useContext } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AppContext, useGlobalContext } from "./Context";
+import { ThemeContext } from "./context/ThemeContext";
 
-const Navbar = (props) => {
-  const [showLinks, setShowLinks] = useState(false);
+const Navbar = () => {
   const { openMenu } = useGlobalContext();
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <nav className={props.darkMode ? "dark" : ""}>
+    <nav className={theme}>
       <div className="nav-center" id="home">
         <div className="nav-header">
           <a href="/">
@@ -19,7 +19,7 @@ const Navbar = (props) => {
           </a>
           <div className="toggler">
             <p className="toggler--light">Light</p>
-            <div className="toggler--slider" onClick={props.toggleDarkMode}>
+            <div className="toggler--slider" onClick={toggleTheme}>
               <div className="toggler--slider--circle"></div>
             </div>
             <p className="toggler--dark">Dark</p>
@@ -28,26 +28,6 @@ const Navbar = (props) => {
             </button>
           </div>
         </div>
-        {/* 原本寫法 {showLinks && (<div>...</div>) } 但這樣子如果沒有先點擊 FaBars 的話，拉長螢幕時就無法顯示選單文字！*/}
-        {/* <div
-          className={`${
-            showLinks ? "links-container show-container" : "links-container"
-          }`}
-        >
-          <ul className="links">
-            {links.map((link) => {
-              const { id, url, text, icon } = link;
-              return (
-                <li key={id}>
-                  <a href={url}>
-                    {icon}
-                    {text}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </div> */}
       </div>
     </nav>
   );

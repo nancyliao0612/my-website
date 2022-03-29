@@ -1,18 +1,24 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
-const LandingPage = (props) => {
+const LandingPage = () => {
+  // aos animation
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
 
+  // theme context
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <main className={props.darkMode ? "dark" : ""}>
+    <main className={theme}>
       <img
         src={
-          props.darkMode
+          theme
             ? "https://i.imgur.com/zSonPg5.png"
             : "https://i.imgur.com/qOG7EOf.png"
         }

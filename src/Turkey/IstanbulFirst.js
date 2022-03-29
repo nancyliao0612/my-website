@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BsDot } from "react-icons/bs";
 import { IoTimeOutline } from "react-icons/io5";
 import { AiOutlineLike } from "react-icons/ai";
 import ScrollButton from "../ScrollButton";
 import useLikeButton from "../useLikeButton";
+import { ThemeContext } from "../context/ThemeContext";
 
-const IstanbulFirst = (props) => {
+const IstanbulFirst = () => {
   const { likes, handleLikeClick } = useLikeButton("IstanbulFirst");
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <main className={props.darkMode ? "darkContent" : "lightContent"}>
+    <main className={theme ? "darkContent" : "lightContent"}>
       <ScrollButton />
       <div>
         <img
@@ -20,7 +22,7 @@ const IstanbulFirst = (props) => {
         <div className="DB-center">
           <h3>在伊斯坦堡的怦然心動 – 與土耳其朋友初次的單獨會面</h3>
           <div className="summary-container">
-            <div className={props.darkMode ? "darkDate" : "lightDate"}>
+            <div className={theme ? "darkDate" : "lightDate"}>
               <div className="date-summary">
                 &nbsp;
                 <IoTimeOutline className="total-icons" />

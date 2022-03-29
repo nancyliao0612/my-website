@@ -1,13 +1,15 @@
-function IstanbulTab({ tabs, filterCards, darkMode }) {
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+
+function IstanbulTab({ tabs, filterCards }) {
+  const { theme } = useContext(ThemeContext);
   return (
-    <div
-      className={darkMode ? "dark-istanbul-tab istanbul-tab" : "istanbul-tab"}
-    >
+    <div className={theme ? "dark-istanbul-tab istanbul-tab" : "istanbul-tab"}>
       {tabs.map((tab, id) => {
         return (
           <p
             className={
-              darkMode ? "dark-istanbul-tab-option" : "istanbul-tab-option"
+              theme ? "dark-istanbul-tab-option" : "istanbul-tab-option"
             }
             key={id}
             onClick={() => filterCards(tab)}

@@ -2,19 +2,23 @@ import hikePicData from "./hikePicData";
 import HikePics from "./HikePics";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
-function HikePictres(props) {
+function HikePictres() {
+  const theme = useContext(ThemeContext);
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
   const hikePics = hikePicData.map((hikePic) => {
     return <HikePics {...hikePic} key={hikePic.id} />;
   });
   return (
-    <>
-      <div className={props.darkMode ? "dark-bg" : "title-container"}>
+    <section className={theme ? "hiking-picture-dark" : "title-container"}>
+      <div>
         <img
           src="https://i.imgur.com/g6VZqgN.png"
           alt="Latest Hikes"
@@ -25,8 +29,7 @@ function HikePictres(props) {
       <div className="hike-pics-scroll" data-aos="fade-up">
         {hikePics}
       </div>
-      ;
-    </>
+    </section>
   );
 }
 

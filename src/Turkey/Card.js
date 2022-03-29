@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Card = (props) => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <div className="article-section">
       <div className="article-container-2">
@@ -12,7 +15,11 @@ const Card = (props) => {
             className="istanbul-pic"
           />
         </Link>
-        <div className={props.darkMode ? "content-for-darkMode" : "istanbul-article-containter"}>
+        <div
+          className={
+            theme ? "content-for-darkMode" : "istanbul-article-containter"
+          }
+        >
           <h3 className="istanbul-title">{props.title}</h3>
           <p className="istanbul-intro">{props.discription}</p>
           <Link to={props.link}>

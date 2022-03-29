@@ -5,7 +5,6 @@ import Navbar from "./Navbar";
 import Menu from "./Menu";
 import Footer from "./Footer";
 import Home from "./Home";
-import reportWebVitals from "./reportWebVitals";
 import Hiking from "./Hiking";
 import HikingDB from "./HikingDB";
 import Turkey from "./Turkey/Turkey";
@@ -18,19 +17,14 @@ import Coding from "./coding/Coding";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
-  const [darkMode, setDarkMode] = React.useState(false);
-  function toggleDarkMode() {
-    setDarkMode((prevMode) => !prevMode);
-  }
-
   return (
     <React.StrictMode>
       <AppProvider>
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Navbar />
         <Menu />
         <Router>
           <Route exact path="/">
-            <Home darkMode={darkMode} />
+            <Home />
           </Route>
           <Route path="/hiking">
             <Hiking />
@@ -42,10 +36,10 @@ function App() {
             <HikingDB />
           </Route>
           <Route path="/TurkeyArticles">
-            <Turkey darkMode={darkMode} />
+            <Turkey />
           </Route>
           <Route path="/RuminationArticle">
-            <RuminationArticle darkMode={darkMode} />
+            <RuminationArticle />
           </Route>
           <Route path="/PcrArticle">
             <PcrArticle />
@@ -54,10 +48,10 @@ function App() {
             <PamukkaleArticle />
           </Route>
           <Route path="/IstanbulFirst">
-            <IstanbulFirst darkMode={darkMode} />
+            <IstanbulFirst />
           </Route>
         </Router>
-        <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Footer />
       </AppProvider>
     </React.StrictMode>
   );

@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { BsDot } from "react-icons/bs";
 import { AiOutlineLike } from "react-icons/ai";
 import ScrollButton from "../ScrollButton";
 import useLikeButton from "../useLikeButton";
+import { ThemeContext } from "../context/ThemeContext";
 
-const RuminationArticle = (props) => {
+const RuminationArticle = () => {
   const { likes, handleLikeClick } = useLikeButton("RuminationArticle");
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <main className={props.darkMode ? "darkContent" : "lightContent"}>
+    <main className={theme ? "darkContent" : "lightContent"}>
       <ScrollButton />
       <div>
         <img
@@ -22,7 +24,7 @@ const RuminationArticle = (props) => {
         </h2>
         <div className="DB-center">
           <div className="summary-container">
-            <div className={props.darkMode ? "darkDate" : "lightDate"}>
+            <div className={theme ? "darkDate" : "lightDate"}>
               <div className="date-summary">
                 &nbsp;
                 <IoTimeOutline className="total-icons" />

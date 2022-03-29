@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import cardData from "../cardData";
 import Card from "./Card";
 import IstanbulCard from "./IstanbulCards";
 import IstanbulTab from "./IstanbulTab";
+import { ThemeContext } from "../context/ThemeContext";
 
 const allTabs = ["all", ...new Set(cardData.map((card) => card.tab))];
 
-const Turkey = (props) => {
+const Turkey = () => {
   const [cards, setCards] = useState(cardData);
   const [tabs, setTabs] = useState(allTabs);
+  const { theme } = useContext(ThemeContext);
 
   const filterCards = (tab) => {
     if (tab === "all") {
@@ -21,11 +23,7 @@ const Turkey = (props) => {
 
   return (
     <>
-      <section
-        className={
-          props.darkMode ? "dark-istanbul-section" : "istanbul-section"
-        }
-      >
+      <section className={theme ? "dark-istanbul-section" : "istanbul-section"}>
         <div className="istanbul-huge-container">
           <img
             src="https://i.imgur.com/XACCl3B.png"
@@ -33,13 +31,9 @@ const Turkey = (props) => {
             className="title-label"
           />
         </div>
-        <IstanbulTab
-          tabs={tabs}
-          filterCards={filterCards}
-          darkMode={props.darkMode}
-        />
+        <IstanbulTab tabs={tabs} filterCards={filterCards} />
         <div className="placeInRow">
-          <IstanbulCard cardData={cards} darkMode={props.darkMode} />
+          <IstanbulCard cardData={cards} />
         </div>
         <br />
         <br />

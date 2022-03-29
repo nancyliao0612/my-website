@@ -83,7 +83,7 @@ Navbar
 nav {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
   margin: 0 auto;
   background: white;
   box-shadow: var(--light-shadow);
@@ -728,10 +728,8 @@ Home - Latest Hikes
   display: flex;
   align-items: center;
   overflow-x: scroll;
-  max-width: var(--max-width);
   margin: 0 auto;
 }
-
 .hikePics {
   width: 50vw;
   height: 150px;
@@ -740,6 +738,10 @@ Home - Latest Hikes
 }
 .title-container {
   background-color: var(--clr-primary-3);
+}
+
+.hiking-picture-dark {
+  background-color: var(--clr-primary-1);
 }
 
 /*
@@ -777,6 +779,16 @@ Home - Footer
 ===============
 */
 
+.footer-wrapper {
+  background: var(--clr-primary-1);
+  color: var(--clr-primary-3);
+}
+
+.footer-dark-wrapper {
+  background: var(--clr-primary-3);
+  color: var(--clr-primary-1);
+}
+
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -784,7 +796,6 @@ Home - Footer
   justify-content: center;
   height: 100px;
   line-height: 1.6rem;
-  background: var(--clr-primary-1);
 }
 
 .footer-icons {
@@ -793,14 +804,20 @@ Home - Footer
   justify-content: center;
 }
 
-.footer-icon {
-  margin: 0 0.8rem;
+.footer-icons a {
   color: var(--clr-primary-3);
+}
+
+.footer-icons-dark a {
+  color: var(--clr-primary-1);
+}
+
+.footer-icons svg {
+  margin: 0 0.8rem;
   width: 1rem;
 }
 
 .footer-copyright {
-  color: var(--clr-primary-3);
   font-weight: 400;
 }
 
@@ -1121,6 +1138,7 @@ Pamukkale EPS 01
 
 .reference {
   font-size: 14px;
+  color: var(--clr-primary-1);
 }
 
 .refLink {
@@ -1318,6 +1336,11 @@ main.darkContent {
   color: var(--clr-primary-2);
 }
 
+.darkContent a,
+.darkContent .reference h5 {
+  color: var(--clr-primary-3);
+}
+
 span.text-small {
   /* border: solid 1px; */
   display: contents;
@@ -1392,7 +1415,7 @@ End of Coding
   }
 
   .menu {
-    z-index: 1;
+    z-index: 99;
     visibility: visible;
     display: flex;
     height: 3rem;
@@ -1461,7 +1484,14 @@ End of Coding
     line-height: 25px;
     font-weight: 300;
     margin-top: 20px;
+  }
+
+  .landing-page-quote {
     color: var(--clr-primary-4);
+  }
+
+  .dark .landing-page-quote {
+    color: var(--clr-primary-2);
   }
 
   /*myPic seciton*/
