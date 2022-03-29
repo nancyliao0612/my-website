@@ -36,8 +36,14 @@ const Home = () => {
       <LandingPage />
       <ScrollButton />
       {/* <About /> */}
-      {/* <Mypic /> */}
       <section className={theme ? "dark" : "istanbul-section"}>
+        <img
+          src="https://i.imgur.com/4yZR7Wx.png"
+          alt="coding"
+          className="coding-leaf-label leaf-label"
+          data-aos="fade-right"
+        />
+        <Mypic />
         <div className="leaf-container">
           <img
             src={
@@ -53,7 +59,7 @@ const Home = () => {
           <img
             src="https://i.imgur.com/am4NrLJ.png"
             alt="istanbul"
-            className="istanbul-leaf-label"
+            className="istanbul-leaf-label leaf-label"
             data-aos="fade-right"
           />
         </Link>

@@ -22,7 +22,7 @@ function HikePictres() {
         <img
           src="https://i.imgur.com/g6VZqgN.png"
           alt="Latest Hikes"
-          className="hiking-leaf-label"
+          className="hiking-leaf-label leaf-label"
           data-aos="fade-right"
         />
       </div>

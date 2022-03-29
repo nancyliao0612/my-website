@@ -11,7 +11,7 @@ const Latesthikes = () => {
         <img
           src="https://i.imgur.com/g6VZqgN.png"
           alt="Latest Hikes"
-          className="hiking-leaf-label"
+          className="hiking-leaf-label leaf-label"
         />
       </div>
       <div className="placeInRow-2">

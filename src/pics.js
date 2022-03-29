@@ -3,15 +3,18 @@
 const myPics = [
   {
     id: 1,
-    image: "https://i.imgur.com/LwckH2P.png?1",
+    image: "https://i.imgur.com/PG5YBMW.png?1",
+    link: "https://meme-generator-practice.netlify.app/",
   },
   {
     id: 2,
-    image: "https://i.imgur.com/jXZE8F2.png?1",
+    image: "https://i.imgur.com/XBr92oS.png",
+    link: "https://noting-taking-app.netlify.app/",
   },
   {
     id: 3,
-    image: "https://i.imgur.com/CtkgGmG.png?1",
+    image: "https://i.imgur.com/BMdi4SR.png?1",
+    link: "https://register--login-system.herokuapp.com",
   },
 ];
 

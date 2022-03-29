@@ -18,6 +18,7 @@ Variables
   --clr-primary-3: #e4e8e6;
   --clr-primary-4: #042825;
   --clr-primary-5: #f2a278;
+  --clr-primary-6: #4a574f9d;
   --clr-black-1: #404040;
   --clr-grey-1: rgb(225, 228, 211);
   --clr-grey-2: #a6a6a6;
@@ -354,26 +355,31 @@ Home - myPic
 ===============
 */
 
-.section {
-  /* background-color: var(--clr-primary-3);
+.section-carousel-wrapper {
+  background-color: var(--clr-primary-3);
   width: 100vw;
-  margin: 0 auto; */
-  /* max-width: var(--max-width); */
-  /* position: relative;
-  top: 3rem;
+  margin: 50px auto;
+  position: relative;
   display: flex;
   align-content: center;
   justify-content: center;
-  height: 20rem; */
+  height: 18rem;
   /* border: solid 1px; */
 }
 
-.section-center {
+.dark-section-carousel-wrapper {
+  background-color: var(--clr-primary-1);
+}
+
+.section-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   position: relative;
   width: 90vw;
   max-width: 800px;
-  height: 20rem;
+  height: 18rem;
   position: relative;
   overflow: hidden;
 }
@@ -384,7 +390,7 @@ article {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  /* opacity: 0; */
   transition: var(--transition);
 }
 
@@ -392,18 +398,17 @@ article img {
   display: flex;
 }
 
-.myPic {
+.carousel-image {
   margin: 0 auto;
-  /* er: solid 1px; */
-  height: 370px;
-  width: 100%;
+  height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .prev,
 .next {
   position: absolute;
-  top: 175px;
+  top: 140px;
   height: 1.25rem;
   width: 1.25rem;
   border-color: transparent;
@@ -414,19 +419,19 @@ article img {
   place-items: center;
   background: white;
   font-size: 1rem;
-  /* border: solid 1px; */
   cursor: pointer;
 }
 .prev:hover,
 .next:hover {
-  background: var(--clr-primary-2);
+  background: #f2a378c4;
+  color: #fff;
 }
 
 .prev {
-  left: 0;
+  left: 15px;
 }
 .next {
-  right: 0;
+  right: 15px;
 }
 
 article.activeSlide {
@@ -440,6 +445,49 @@ article.nextSlide {
   transform: translateX(100%);
 }
 
+@media screen and (min-width: 768px) {
+  .coding-leaf-label {
+    margin-top: 0;
+  }
+  .section-carousel-wrapper {
+    padding: 30px 0;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+    min-width: 1000px;
+  }
+  .section-carousel {
+    height: 20rem;
+  }
+  article {
+    opacity: 1;
+  }
+  article.activeSlide {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .activeSlide {
+    height: 100%;
+  }
+
+  article.lastSlide {
+    transform: translateX(45%);
+    opacity: 0.5;
+    height: 80%;
+    top: 30px;
+  }
+  article.nextSlide {
+    transform: translateX(-45%);
+    opacity: 0.5;
+    height: 80%;
+    top: 30px;
+  }
+  .prev,
+  .next {
+    top: 170px;
+  }
+}
 /*
 =============== 
 End of Home - myPic
@@ -567,15 +615,20 @@ Home - Latest Hikes
   height: 1200px;
 }
 
-.istanbul-leaf-label {
-  width: 8rem;
+.leaf-label {
   margin-left: 40px;
   margin-top: 2rem;
 }
+
+.coding-leaf-label {
+  width: 6.5rem;
+}
+
+.istanbul-leaf-label {
+  width: 8rem;
+}
 .hiking-leaf-label {
   width: 6.5rem;
-  margin-left: 40px;
-  margin-top: 2rem;
 }
 
 .leaf-container {
@@ -1682,14 +1735,20 @@ End of Coding
     right: -100px;
   }
 
-  .istanbul-leaf-label {
+  .leaf-label {
     margin-left: 20%;
+  }
+
+  .istanbul-leaf-label {
     width: 10rem;
+  }
+
+  .coding-leaf-label {
+    width: 8.5rem;
   }
 
   .hiking-leaf-label {
     width: 8rem;
-    margin-left: 20%;
   }
   .hikePics {
     width: 25vw;

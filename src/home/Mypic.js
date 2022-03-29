@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import pics from "../pics";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { ThemeContext } from "../context/ThemeContext";
 
 function Mypic() {
   const [myPics, setMyPics] = useState(pics);
   const [index, setIndex] = React.useState(0);
+  const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     const lastIndex = myPics.length - 1;
@@ -25,11 +29,24 @@ function Mypic() {
     };
   }, [index]);
 
+  // aos animation
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <section className="section">
-      <div className="section-center">
+    <section
+      className={
+        theme
+          ? "section-carousel-wrapper dark-section-carousel-wrapper"
+          : "section-carousel-wrapper"
+      }
+      data-aos="fade-up"
+    >
+      <div className="section-carousel">
         {myPics.map((nancyPic, personIndex) => {
-          const { id, image } = nancyPic;
+          const { id, image, link } = nancyPic;
 
           let position = "nextSlide";
           if (personIndex === index) {
@@ -44,22 +61,19 @@ function Mypic() {
 
           return (
             <article className={position} key={id}>
-              <img
-                src={image}
-                alt="myPic"
-                className="myPic"
-                srcSet={`${image} 300w, ${image} 768w, ${image} 1280w`}
-              />
+              <a href={link} target="_blank">
+                <img src={image} alt="myPic" className="carousel-image" />
+              </a>
             </article>
           );
         })}
-        <button className="prev" onClick={() => setIndex(index - 1)}>
-          <FiChevronLeft />
-        </button>
-        <button className="next" onClick={() => setIndex(index + 1)}>
-          <FiChevronRight />
-        </button>
       </div>
+      <button className="prev" onClick={() => setIndex(index - 1)}>
+        <FiChevronLeft />
+      </button>
+      <button className="next" onClick={() => setIndex(index + 1)}>
+        <FiChevronRight />
+      </button>
     </section>
   );
 }
