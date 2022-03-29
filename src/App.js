@@ -9,7 +9,6 @@ import Hiking from "./Hiking";
 import HikingDB from "./HikingDB";
 import Turkey from "./Turkey/Turkey";
 import PamukkaleArticle from "./Turkey/PamukkaleArticle";
-import FoodcostArticle from "./Turkey/FoodcostArticle";
 import IstanbulFirst from "./Turkey/IstanbulFirst";
 import PcrArticle from "./Turkey/PcrArticle";
 import RuminationArticle from "./Turkey/RuminationArticle";

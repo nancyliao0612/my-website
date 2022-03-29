@@ -2,7 +2,7 @@ import { GiMountainCave } from "react-icons/gi";
 import { GoHome } from "react-icons/go";
 import { IoLogoReact } from "react-icons/io5";
 import { FiSun } from "react-icons/fi";
-import { AiOutlineUserSwitch } from "react-icons/ai";
+// import { AiOutlineUserSwitch } from "react-icons/ai";
 
 export const links = [
   {
@@ -29,10 +29,10 @@ export const links = [
     text: "Hiking",
     icon: <GiMountainCave />,
   },
-  {
-    id: 5,
-    url: "/about",
-    text: "About",
-    icon: <AiOutlineUserSwitch />,
-  },
+  // {
+  //   id: 5,
+  //   url: "/about",
+  //   text: "About",
+  //   icon: <AiOutlineUserSwitch />,
+  // },
 ];

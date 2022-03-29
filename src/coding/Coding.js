@@ -1,13 +1,15 @@
 import codingData from "./codingData";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import CodingTab from "./CodingTab";
 import CodingProject from "./CodingProject";
+import { ThemeContext } from "../context/ThemeContext";
 
 const allTabs = ["all", ...new Set(codingData.map((coding) => coding.tab))];
 
 function Coding() {
   const [codingTabs, setCodingTabs] = useState(allTabs);
   const [codeProjects, setCodeProjects] = useState(codingData);
+  const { theme } = useContext(ThemeContext);
 
   function filterCodeProject(tab) {
     if (tab === "all") {
@@ -21,7 +23,11 @@ function Coding() {
   }
 
   return (
-    <section className="coding-section">
+    <section
+      className={
+        theme ? "coding-section dark-coding-section" : "coding-section"
+      }
+    >
       <div className="coding-huge-container">
         <img
           src="https://i.imgur.com/XQ7me3A.png"

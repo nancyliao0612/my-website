@@ -5,7 +5,6 @@ import {
   FaStarHalfAlt,
   FaMountain,
   FaRoad,
-  FaArrowUp,
 } from "react-icons/fa";
 import { AiFillClockCircle } from "react-icons/ai";
 
@@ -13,7 +12,11 @@ const HikingDB = () => {
   return (
     <section className="DB-background">
       <div>
-        <img src="https://i.imgur.com/g6VZqgN.png" alt="" className="map-pic" />
+        <img
+          src="https://i.imgur.com/sEbR78w.jpg"
+          alt="mountain"
+          className="map-pic"
+        />
       </div>
       <div className="DB-center">
         <div className="summary-container">
@@ -351,11 +354,6 @@ const HikingDB = () => {
         <br />
         <br />
         <p>Photo Credit: Hank</p>
-        <a href="#home">
-          <button className="back-to-top">
-            <FaArrowUp />
-          </button>
-        </a>
       </div>
     </section>
   );

@@ -892,7 +892,7 @@ HikingDB
 
 .map-pic {
   width: 100%;
-  max-height: 600px;
+  max-height: 500px;
   object-fit: cover;
 }
 
@@ -1056,7 +1056,8 @@ Istanbul
 */
 
 .istanbul-section,
-.coding-section {
+.coding-section,
+.hiking-section {
   width: 100vw;
   height: auto;
   background-color: var(--clr-primary-2);
@@ -1065,6 +1066,11 @@ Istanbul
   flex-direction: column;
   padding-bottom: 100px;
   overflow: hidden;
+}
+
+.dark-coding-section,
+.dark-hiking-section {
+  background-color: var(--clr-primary-1);
 }
 
 section.dark {
@@ -1268,7 +1274,8 @@ Turkey
 */
 
 .istanbul-huge-container,
-.coding-huge-container {
+.coding-huge-container,
+.hiking-huge-container {
   /* border: solid 1px; */
   display: flex;
   justify-content: center;
@@ -1284,7 +1291,7 @@ Turkey
   object-fit: cover;
 }
 
-.istanbul-tab {
+.tab-option {
   width: 100%;
   height: 40px;
   display: flex;
@@ -1295,7 +1302,7 @@ Turkey
   margin-bottom: 40px;
 }
 
-.istanbul-tab-option {
+.tab-option-option {
   margin: 0 0.8rem;
   cursor: pointer;
   border-bottom: solid 1px var(--clr-primary-3);
@@ -1312,11 +1319,12 @@ Turkey
   overflow: hidden;
 }
 
-.dark-istanbul-tab {
+.dark-tab-option {
   background-color: var(--clr-primary-3);
+  color: var(--clr-primary-1);
 }
 
-.dark-istanbul-tab-option {
+.dark-tab-option-option {
   margin: 0 0.8rem;
   cursor: pointer;
   border-bottom: solid 1px var(--clr-primary-1);
@@ -1592,13 +1600,24 @@ End of Coding
     /* border: solid 1px; */
   }
 
+  .hiking-section {
+    height: calc(100vh - 100px);
+    border: solid 1px;
+    padding-bottom: 100px;
+    background-color: var(--clr-primary-3);
+  }
+
+  .dark-coding-section,
+  .dark-hiking-section {
+    background-color: var(--clr-primary-1);
+  }
+
   section.dark {
     padding-bottom: 100px;
     overflow: hidden;
   }
 
   .article-section {
-    /* display: initial; */
     width: 55vw;
     margin: 0 auto;
     height: auto;
@@ -1762,14 +1781,14 @@ End of Coding
     margin-left: 10vw;
   }
   /* istanbul section */
-  .istanbul-tab-option,
-  .dark-istanbul-tab-option {
+  .tab-option-option,
+  .dark-tab-option-option {
     margin: 0 2rem;
     padding: 0 0.5rem;
     border-bottom: none;
   }
-  .istanbul-tab-option:hover,
-  .dark-istanbul-tab-option:hover {
+  .tab-option-option:hover,
+  .dark-tab-option-option:hover {
     border-bottom: solid 2px #f2a278;
   }
   .title-label {
