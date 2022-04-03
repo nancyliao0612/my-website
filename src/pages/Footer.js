@@ -6,6 +6,7 @@ import { ThemeContext } from "../context/ThemeContext";
 
 const Footer = () => {
   const { theme } = useContext(ThemeContext);
+  const currentYear = new Date().getFullYear();
   return (
     <footer className={theme ? "footer-dark-wrapper" : "footer-wrapper"}>
       <section className="footer-section">
@@ -23,7 +24,7 @@ const Footer = () => {
           </a>
         </div>
         <h6 className="footer-copyright">
-          © 2022 Nancy Liao. All Rights Reserved.
+          © {currentYear} Nancy Liao. All Rights Reserved.
         </h6>
       </section>
     </footer>
