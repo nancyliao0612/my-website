@@ -89,10 +89,16 @@ nav {
   background: white;
   box-shadow: var(--light-shadow);
 }
+
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0.2rem 0.7rem;
   z-index: 999;
 }
@@ -118,6 +124,7 @@ nav {
 .toggler {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 .toggler p {
@@ -215,6 +222,10 @@ Menu
   transition: var(--transition);
   transform: rotate(45deg);
   cursor: pointer;
+}
+
+.nav-links {
+  display: none;
 }
 
 .links {
@@ -1455,15 +1466,15 @@ End of Coding
   .nav-center {
     max-width: var(--max-width);
     margin: 0 auto; /*整個頁面置中*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 1rem;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .nav-header {
     padding: 0;
+    height: 50px;
     cursor: pointer;
   }
 
@@ -1474,16 +1485,33 @@ End of Coding
   .menu {
     z-index: 99;
     visibility: visible;
-    display: flex;
+    display: none;
     height: 3rem;
     width: 585px;
-    left: 50%;
+    left: 100%;
+    background-color: transparent;
     /*navBar高度讓裡面的元素撐開*/
   }
 
   .close-btn {
     display: none;
     transition: none;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links a {
+    color: var(--clr-primary-1);
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .nav-links svg {
+    margin-right: 0.5rem;
   }
 
   .links {
@@ -1505,7 +1533,8 @@ End of Coding
     transition: none;
   }
 
-  .links a:hover {
+  .links a:hover,
+  .nav-links a:hover {
     color: var(--clr-primary-5);
     padding: 0.7rem 0.8rem;
   }
