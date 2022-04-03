@@ -1,16 +1,14 @@
 import React, { useEffect, useContext } from "react";
-import Mypic from "./home/Mypic";
-import About from "./home/About";
-// import Latesthikes from "./home/Latesthikes";
+import Mypic from "../components/Home/Mypic";
 import { Link } from "react-router-dom";
-import cardData from "./cardData";
-import Card from "./Turkey/Card";
-import LandingPage from "./home/LandingPage";
-import HikePictres from "./home/HikePictures";
-import ScrollButton from "./ScrollButton";
+import cardData from "../data/cardData";
+import Card from "../components/Card";
+import LandingPage from "../components/Home/LandingPage";
+import HikePictres from "../components/Home/HikePictures";
+import ScrollButton from "../components/ScrollButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ThemeContext } from "./context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
@@ -19,6 +17,7 @@ const Home = () => {
     AOS.init();
     AOS.refresh();
   }, []);
+
   const card = cardData.map((item) => {
     return (
       <Card

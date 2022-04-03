@@ -1,8 +1,7 @@
 import React, { useState, useContext } from "react";
-import cardData from "../cardData";
-import Card from "./Card";
-import IstanbulCard from "./IstanbulCards";
-import IstanbulTab from "./IstanbulTab";
+import cardData from "../data/cardData";
+import IstanbulCard from "../components/Turkey/IstanbulCards";
+import IstanbulTab from "../components/Turkey/IstanbulTab";
 import { ThemeContext } from "../context/ThemeContext";
 
 const allTabs = ["all", ...new Set(cardData.map((card) => card.tab))];

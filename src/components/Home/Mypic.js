@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
-import pics from "../pics";
+import carouselData from "../../data/carouselData";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 function Mypic() {
-  const [myPics, setMyPics] = useState(pics);
+  const [myPics, setMyPics] = useState(carouselData);
   const [index, setIndex] = React.useState(0);
   const { theme } = useContext(ThemeContext);
 

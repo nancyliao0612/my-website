@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { BsDot } from "react-icons/bs";
 import { IoTimeOutline } from "react-icons/io5";
 import { AiOutlineLike } from "react-icons/ai";
-import ScrollButton from "../ScrollButton";
+import ScrollButton from "../components/ScrollButton";
 import useLikeButton from "../useLikeButton";
 import { ThemeContext } from "../context/ThemeContext";
 

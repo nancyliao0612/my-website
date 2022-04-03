@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
-import { ThemeContext } from "./context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Footer = () => {
   const { theme } = useContext(ThemeContext);

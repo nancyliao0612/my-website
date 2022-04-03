@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { AppContext, useGlobalContext } from "./Context";
-import { ThemeContext } from "./context/ThemeContext";
+import { AppContext, useGlobalContext } from "../context/MenuContext";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Navbar = () => {
   const { openMenu } = useGlobalContext();

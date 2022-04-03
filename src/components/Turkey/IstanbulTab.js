@@ -1,17 +1,16 @@
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
-function CodingTab({ codingTabs, filterCodeProject }) {
+function IstanbulTab({ tabs, filterCards }) {
   const { theme } = useContext(ThemeContext);
-
   return (
     <div className={theme ? "dark-tab-option tab-option" : "tab-option"}>
-      {codingTabs.map((tab, id) => {
+      {tabs.map((tab, id) => {
         return (
           <p
+            className={theme ? "dark-tab-option-option" : "tab-option-option"}
             key={id}
-            className="tab-option-option"
-            onClick={() => filterCodeProject(tab)}
+            onClick={() => filterCards(tab)}
           >
             {tab}
           </p>
@@ -21,4 +20,4 @@ function CodingTab({ codingTabs, filterCodeProject }) {
   );
 }
 
-export default CodingTab;
+export default IstanbulTab;

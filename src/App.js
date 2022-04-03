@@ -1,19 +1,21 @@
 import React from "react";
-import { AppProvider } from "./Context";
+import { AppProvider } from "./context/MenuContext";
 import "./index.css";
-import Navbar from "./Navbar";
-import Menu from "./Menu";
-import Footer from "./Footer";
-import Home from "./Home";
-import Hiking from "./Hiking";
-import HikingDB from "./HikingDB";
-import Turkey from "./Turkey/Turkey";
-import PamukkaleArticle from "./Turkey/PamukkaleArticle";
-import IstanbulFirst from "./Turkey/IstanbulFirst";
-import PcrArticle from "./Turkey/PcrArticle";
-import RuminationArticle from "./Turkey/RuminationArticle";
-import Coding from "./coding/Coding";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  Coding,
+  Footer,
+  Hiking,
+  HikingDB,
+  Home,
+  IstanbulFirst,
+  Menu,
+  Navbar,
+  PamukkaleArticle,
+  PcrArticle,
+  RuminationArticle,
+  Turkey,
+} from "./pages/index";
 
 function App() {
   return (

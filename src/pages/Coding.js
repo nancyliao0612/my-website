@@ -1,7 +1,7 @@
-import codingData from "./codingData";
+import codingData from "../data/codingData";
 import { useState, useContext } from "react";
-import CodingTab from "./CodingTab";
-import CodingProject from "./CodingProject";
+import CodingTab from "../components/Coding/CodingTab";
+import CodingProject from "../components/Coding/CodingProject";
 import { ThemeContext } from "../context/ThemeContext";
 
 const allTabs = ["all", ...new Set(codingData.map((coding) => coding.tab))];

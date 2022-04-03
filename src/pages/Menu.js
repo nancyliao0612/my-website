@@ -1,7 +1,7 @@
 import React from "react";
-import { links } from "./data";
+import { links } from "../data/menuData";
 import { AiOutlinePlus } from "react-icons/ai";
-import { useGlobalContext } from "./Context";
+import { useGlobalContext } from "../context/MenuContext";
 
 const Menu = () => {
   const { isMenuOpen, closeMenu } = useGlobalContext();

@@ -1,9 +1,9 @@
-import hikePicData from "./hikePicData";
-import HikePics from "./HikePics";
+import hikePicData from "../../data/hikePicData";
+import HikePics from "../../components/Hiking/HikePics";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 function HikePictres() {
   const theme = useContext(ThemeContext);

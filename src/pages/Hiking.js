@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "./context/ThemeContext";
-import HikingCard from "./Hiking/HikingCard";
+import { ThemeContext } from "../context/ThemeContext";
+import HikingCard from "../components/Hiking/HikingCard";
 
 const Hiking = () => {
   const { theme } = useContext(ThemeContext);

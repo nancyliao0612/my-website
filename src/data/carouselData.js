@@ -1,6 +1,6 @@
 //動態輪播牆
 
-const myPics = [
+const carouselData = [
   {
     id: 1,
     image: "https://i.imgur.com/PG5YBMW.png?1",
@@ -18,4 +18,4 @@ const myPics = [
   },
 ];
 
-export default myPics;
+export default carouselData;
