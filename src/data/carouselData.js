@@ -8,8 +8,8 @@ const carouselData = [
   },
   {
     id: 2,
-    image: "https://i.imgur.com/XBr92oS.png",
-    link: "https://noting-taking-app.netlify.app/",
+    image: "https://i.imgur.com/JcalBRz.png",
+    link: "https://github-user-repo-search.netlify.app/",
   },
   {
     id: 3,

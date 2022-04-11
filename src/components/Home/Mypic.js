@@ -7,7 +7,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 
 function Mypic() {
   const [myPics, setMyPics] = useState(carouselData);
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = useState(0);
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function Mypic() {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 10000);
+    }, 5000);
     return () => {
       clearInterval(slider);
     };
