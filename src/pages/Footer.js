@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { BsFacebook } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { ThemeContext } from "../context/ThemeContext";
@@ -13,13 +13,16 @@ const Footer = () => {
         <div
           className={theme ? "footer-icons-dark footer-icons" : "footer-icons"}
         >
-          <a href="https://www.facebook.com/profile.php?id=100003369163974">
-            <BsFacebook />
+          <a href="https://github.com/nancyliao0612" target="_blank">
+            <BsGithub />
           </a>
-          <a href="https://www.instagram.com/nancyliao0612/">
+          <a href="https://www.instagram.com/nancyliao0612/" target="_blank">
             <BsInstagram />
           </a>
-          <a href="https://www.linkedin.com/in/nancy-liao-a6855b13b/">
+          <a
+            href="https://www.linkedin.com/in/nancy-liao-a6855b13b/"
+            target="_blank"
+          >
             <BsLinkedin />
           </a>
         </div>
