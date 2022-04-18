@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className="nav-left">
             <a href="/">
               <img
-                src="https://i.imgur.com/a3AIbE4.png?1"
+                src="https://i.imgur.com/JW2n9Qr.png?1"
                 className="logo"
                 alt="logo"
               />
