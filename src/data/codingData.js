@@ -14,9 +14,15 @@ export default [
   {
     id: 3,
     tab: "React",
-    link: "https://speed-typingame.netlify.app/",
-    imageLink: "https://i.imgur.com/KoEOvTl.png",
+    link: "https://tenzies-game-fun.netlify.app/",
+    imageLink: "https://i.imgur.com/QI5Wp8c.png",
   },
+  // {
+  //   id: 3,
+  //   tab: "React",
+  //   link: "https://speed-typingame.netlify.app/",
+  //   imageLink: "https://i.imgur.com/KoEOvTl.png",
+  // },
   {
     id: 4,
     tab: "JavaScript",
